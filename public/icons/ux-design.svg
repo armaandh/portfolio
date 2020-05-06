@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>mdi-ballot-recount copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Test-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Choosed-Landing-Page-Copy" transform="translate(-334.000000, -1596.000000)" fill="#FF7231" fill-rule="nonzero">
+            <g id="Skills-card" transform="translate(133.000000, 1465.000000)">
+                <g id="ux-design" transform="translate(166.000000, 100.000000)">
+                    <g id="mdi-ballot-recount-copy" transform="translate(35.000000, 31.000000)">
+                        <g id="Icon">
+                            <path d="M48,27 L48,31.5 C54.627417,31.5 60,36.872583 60,43.5 C60,45.96 59.25,48.24 57.99,50.13 L54.72,46.86 C55.23,45.84 55.5,44.7 55.5,43.5 C55.5,39.3578644 52.1421356,36 48,36 L48,40.5 L41.25,33.75 L48,27 M48,60 L48,55.5 C41.372583,55.5 36,50.127417 36,43.5 C36,41.04 36.75,38.76 38.01,36.87 L41.28,40.14 C40.77,41.16 40.5,42.3 40.5,43.5 C40.5,47.6421356 43.8578644,51 48,51 L48,46.5 L54.75,53.25 L48,60 M21,42 L12,42 L12,33 L21,33 L21,42 M21,12 L21,21 L12,21 L12,12 L21,12 M0,48 L0,6 C0,2.6862915 2.6862915,0 6,0 L48,0 C51.3137085,0 54,2.6862915 54,6 L54,24.51 C52.5,24.18 51,24 49.5,24 C38.7304474,24 30,32.7304474 30,43.5 C30,47.37 31.14,51 33,54 L6,54 C2.6862915,54 0,51.3137085 0,48 Z M30,19.5 L45,19.5 L45,13.5 L30,13.5 L30,19.5 M24,30 L9,30 L9,45 L24,45 L24,30 M24,9 L9,9 L9,24 L24,24 L24,9 Z" id="Icon-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

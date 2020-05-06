@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="49px" viewBox="0 0 49 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.3%" y="-5.3%" width="110.6%" height="110.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="0%" y1="11.8550081%" x2="96.6943642%" y2="11.8550081%" id="linearGradient-2">
+            <stop stop-color="#6122F5" offset="0%"></stop>
+            <stop stop-color="#6B20F6" offset="34.6707912%"></stop>
+            <stop stop-color="#791DF9" offset="70.093479%"></stop>
+            <stop stop-color="#891AFB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Test-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Case-Study" transform="translate(-302.000000, -120.000000)">
+            <g id="Group" transform="translate(128.000000, 0.000000)">
+                <g id="Icon" filter="url(#filter-1)" transform="translate(175.000000, 121.000000)">
+                    <circle id="Oval" fill="url(#linearGradient-2)" fill-rule="nonzero" cx="23.5" cy="23.5" r="23.5"></circle>
+                    <text id="S" font-family="Lobster-Regular, Lobster" font-size="36.71875" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="12.8515625" y="37.5507812">S</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

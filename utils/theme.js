@@ -1,7 +1,7 @@
 import { css } from '@emotion/core';
 
 export const theme = {
-  bgColor: '#F2F8FF'
+  bgColor: '#F2F8FF',
 }
 
 export let cssElementsModifiers = (props) =>
@@ -16,4 +16,8 @@ export let cssElementsModifiers = (props) =>
   padding-bottom: ${props.pb ? props.pb + 'px' : 0};
   padding-left: ${props.pl ? props.pl + 'px' : 0};
   padding-right: ${props.pr ? props.pr + 'px' : 0};
+`
+
+export let cssShadowDefault = (props) => css`
+  box-shadow: 0 2px 24px 1px rgba(209, 230, 255, 0.57);
 `

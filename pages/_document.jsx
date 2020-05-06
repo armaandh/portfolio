@@ -1,33 +1,25 @@
 import Document, { Head, Main, NextScript } from 'next/document';
+import { Global, css } from '@emotion/core'
 
 export default class MyDocument extends Document {
   render() {
     return (
       <html>
         <Head>
-          <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
-          <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png" />
-          <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png" />
-          <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png" />
-          <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png" />
-          <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png" />
-          <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png" />
-          <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png" />
-          <link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
-          <meta name="msapplication-TileColor" content="#ffffff" />
-          <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png" />
+          <link rel="manifest" href="/favicons/site.webmanifest" />
+          <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+          <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
           <meta name="description" content="I research, design and build valuable software solutions to empower users and increase product growth." />
-          <link href="https://fonts.googleapis.com/css?family=Spartan:400,700,900&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Spartan:400,500,700,900&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
           <NextScript />
-          <style global jsx>{`
+          <Global styles={css`
             html, body, div, span, applet, object, iframe,
             h1, h2, h3, h4, h5, h6, p, blockquote, pre,
             a, abbr, acronym, address, big, cite, code,
@@ -73,6 +65,10 @@ export default class MyDocument extends Document {
               text-rendering: optimizelegibility;
               background-color: #F2F8FF;
             }
+
+            body.overflow {
+              overflow: hidden;
+            }
             
             #__next {
               display flex;
@@ -80,7 +76,25 @@ export default class MyDocument extends Document {
               align-items: center;
             }
 
-          `}</style>
+            p {
+              font-size: 22px;
+            }
+
+            @media only screen and (max-width: 1024px) {
+              p, h2, h3 {
+                font-size: 18px;
+                line-height: 22px;
+              }
+            }
+
+            @media only screen and (max-width: 550px) {
+              p, h2, h3 {
+                font-size: 15px;
+                line-height: 17px;
+              }
+            }
+            `}
+          />
         </body>
       </html>
     )

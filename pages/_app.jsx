@@ -1,4 +1,5 @@
 import 'antd/dist/antd.css';
+import 'react-image-lightbox/style.css';
 
 import { ConfigProvider } from 'antd';
 import enGB from 'antd/lib/locale/en_GB';

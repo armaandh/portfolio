@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>ant-design:arrow-up-outlined</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Test-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Case-Study---Saia" transform="translate(-1200.000000, -19889.000000)" fill-rule="nonzero">
+            <g id="Group-23" transform="translate(1178.000000, 19867.000000)">
+                <g id="ant-design:arrow-up-outlined" transform="translate(18.000000, 18.000000)">
+                    <g id="Icon" transform="translate(4.000000, 4.000000)" fill="#4263FF">
+                        <path d="M23.125,13.046875 L12.753125,1.09375 C12.5634225,0.874900993 12.2880613,0.749177606 11.9984375,0.749177606 C11.7088137,0.749177606 11.4334525,0.874900993 11.24375,1.09375 L0.875,13.046875 C0.811012661,13.1204538 0.795848535,13.2246057 0.836198507,13.3133757 C0.87654848,13.4021456 0.964990035,13.459204 1.0625,13.459375 L3.59375,13.459375 C3.7375,13.459375 3.875,13.396875 3.971875,13.2875 L10.8125,5.403125 L10.8125,23 C10.8125,23.1375 10.925,23.25 11.0625,23.25 L12.9375,23.25 C13.075,23.25 13.1875,23.1375 13.1875,23 L13.1875,5.403125 L20.028125,13.2875 C20.121875,13.396875 20.259375,13.459375 20.40625,13.459375 L22.9375,13.459375 C23.15,13.459375 23.265625,13.209375 23.125,13.046875 Z" id="Icon-Path"></path>
+                    </g>
+                    <rect id="ViewBox" x="0" y="0" width="32" height="32"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
