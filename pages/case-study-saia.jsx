@@ -319,7 +319,7 @@ const CaseStudySaia = ({ size }) => {
                   {(isResponsive || isSmallComputer) && <Image productImage src="../saia/product-image-4.png" />}
                 </div>
               </ProductImageBox>
-              <Link href="http://localhost:3000/saia-prototype" scroll={false} prefetch={false} passHref>
+              <Link href="https://saia.prattdelzenne.com" scroll={false} prefetch={false} passHref>
                 <Prototype target="_blank">
                   <div className="overlay"></div>
                   <div className="text">

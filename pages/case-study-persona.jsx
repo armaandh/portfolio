@@ -280,7 +280,7 @@ const CaseStudyPersona = ({ size }) => {
                   {isResponsive && <Image productImage src="../persona/product-image-4.png" />}
                 </div>
               </ProductImageBox>
-              <Link href="http://localhost:3000/persona-prototype" scroll={false} prefetch={false} passHref>
+              <Link href="https://persona.prattdelzenne.com" scroll={false} prefetch={false} passHref>
                 <Prototype project="persona" target="_blank">
                   <div className="overlay"></div>
                   <div className="text">
