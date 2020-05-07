@@ -513,10 +513,10 @@ const CaseStudySaia = ({ size }) => {
                     <div className="model">
                       <span className="title">Lessons</span>
                       <ul>
-                        <li>Optimize for conversions not for traffic</li>
-                        <li>Online communities can give you great feedback</li>
                         <li>Most users won’t tell you what's wrong, they will just leave</li>
                         <li>Focus on those that can see the value of your product</li>
+                        <li>Optimize for conversions not for traffic</li>
+                        <li>Online communities can give you great feedback</li>
                       </ul>
                     </div>
                   </div>

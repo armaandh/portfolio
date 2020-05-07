@@ -74,6 +74,10 @@ export default class MyDocument extends Document {
               display flex;
               flex-direction: column;
               align-items: center;
+
+              &> div {
+                background-color: #F2F8FF !important;
+              }
             }
 
             p {

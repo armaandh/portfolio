@@ -486,10 +486,10 @@ const CaseStudyPersona = ({ size }) => {
                     <div className="model">
                       <span className="title">Lessons</span>
                       <ul>
-                          <li><span>70%</span> of users who start, complete the test</li>
-                          <li><span>89%</span> of users find the test engaging and beautiful</li>
-                          <li><span>82%</span> of users find results very insightful</li>
-                          <li><span>39%</span> of users share their results with 3+ friends</li>
+                          <li>Some people care a lot about how their data will be used, but most don't</li>
+                          <li>Don't use free databases for production use, it always bites back</li>
+                          <li>When peope like and share, they can start a massive network effect</li>
+                          <li>Good design increases trust by a huge margin</li>
                       </ul>
                     </div>
                   </div>
