@@ -440,8 +440,8 @@ export const CaseStudiesContainer = styled.div`
           background: #6420F5;
         }
 
-        &.orange {
-          background: #FF7231;
+        &.blue {
+          background: #566eff;
         }
       }
     }

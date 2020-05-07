@@ -30,12 +30,17 @@ class Grid extends Component {
       >
         <div className="grid-item" key="key1">
           <Image 
-            src="/experiments/calendar.png"
+            src="/experiments/calendar-app.png"
           />
         </div>
-        <div className="grid-item" key="key2">
+        <div className="grid-item" key="key14">
           <Image 
-            src="/experiments/save-1.png"
+            src="/experiments/save-2.png"
+          />
+        </div>
+        <div className="grid-item" key="key8">
+          <Image 
+            src="/experiments/menu-1.gif"
           />
         </div>
         <div className="grid-item" key="key3">
@@ -43,9 +48,24 @@ class Grid extends Component {
             src="/experiments/insurance-credit-app.png"
           />
         </div>
+        <div className="grid-item" key="key2">
+          <Image 
+            src="/experiments/save-1.png"
+          />
+        </div>
+        <div className="grid-item" key="key9">
+          <Image 
+            src="/experiments/meditation-app.png"
+          />
+        </div>
         <div className="grid-item" key="key4">
           <Image 
             src="/experiments/components-1.png"
+          />
+        </div>
+        <div className="grid-item" key="key13">
+          <Image 
+            src="/experiments/calendar.png"
           />
         </div>
         <div className="grid-item" key="key5">
@@ -63,16 +83,6 @@ class Grid extends Component {
             src="/experiments/flower-plant-app.png"
           />
         </div>
-        <div className="grid-item" key="key8">
-          <Image 
-            src="/experiments/menu-1.gif"
-          />
-        </div>
-        <div className="grid-item" key="key9">
-          <Image 
-            src="/experiments/meditation-app.png"
-          />
-        </div>
         <div className="grid-item" key="key10">
           <Image 
             src="/experiments/insurance-app-web.png"
@@ -82,11 +92,6 @@ class Grid extends Component {
         <div className="grid-item" key="key12">
           <Image 
             src="/experiments/search-1.gif"
-          />
-        </div>
-        <div className="grid-item" key="key13">
-          <Image 
-            src="/experiments/save-2.png"
           />
         </div>
       </StackGrid>

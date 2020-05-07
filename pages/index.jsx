@@ -135,7 +135,7 @@ const Index = ({ size }) => {
                 <div className="img practice"></div>
                 <div className="info">
                   <p>Experiments</p>
-                  <div className="see-more orange">
+                  <div className="see-more blue">
                     {!isResponsive && <ArrowRight width="11" height="19" viewBox="0 0 11 19" />}
                     {isResponsive && <ArrowRight width="7" height="12" viewBox="0 0 11 19" />}
                   </div>
