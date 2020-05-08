@@ -1,4 +1,5 @@
 import { useRef } from "react"
+import styled from '@emotion/styled';
 import { motion, AnimatePresence } from "framer-motion"
 import { withSize } from 'react-sizeme'
 
@@ -7,10 +8,17 @@ import BigArrowRight from '../../public/icons/big-arrow-right.svg'
 import { Button } from './Feedback'
 import { Divider } from '../Boxes'
 
+const PageContainer = styled(motion.div)`
+  margin-bottom: 140px;
+
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 60px;
+  }
+`
 
 export const AnimatedLayout = ({ children, className }) => (
   <AnimatePresence>
-    <motion.div
+    <PageContainer
       className={className}
       initial={{ y: 200, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -22,7 +30,7 @@ export const AnimatedLayout = ({ children, className }) => (
       }}
     >
       {children}
-    </motion.div>
+    </PageContainer>
   </AnimatePresence>
 )
 

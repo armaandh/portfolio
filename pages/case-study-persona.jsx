@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { withSize } from 'react-sizeme'
 import { useRouter } from 'next/router'
 
+import ArrowRight from '../public/icons/arrow-right.svg';
 import Problems from '../public/icons/problems-blue.svg';
 import Goals from '../public/icons/goals-blue.svg';
 import UXMetrics from '../public/icons/ux-metrics-blue.svg';
@@ -15,6 +16,7 @@ import {
     Box,
     SummaryContainer,
     StudyItemContainer,
+    CaseStudiesContainer,
     ProductImageBox,
     Prototype,
     Divider,
@@ -464,7 +466,7 @@ const CaseStudyPersona = ({ size }) => {
                       <p className="number">6 000</p>
                       <p className="label">Test completed</p>
                     </div>
-                    <div className="stat">
+                    <div className="stat margin-persona">
                       <p className="number">70%</p>
                       <p className="label">Completion rate</p>
                     </div>
@@ -498,7 +500,7 @@ const CaseStudyPersona = ({ size }) => {
             </Box>
             <Box noPadTop>
               <h2>Product Updates</h2>
-              <StudyItemContainer>
+              <StudyItemContainer noMb>
                 <div className="tag blue"><span>Iterations</span></div>
                 <p className="text">
                   After the launch, I received requests and observed a lot of user behavior using analytics tools.
@@ -511,6 +513,35 @@ const CaseStudyPersona = ({ size }) => {
                   </div>
                 </div>
               </StudyItemContainer>
+            </Box>
+            <Divider blue />
+            <Box>
+              <CaseStudiesContainer>
+                <Link href="/case-study-saia" scroll={false}>
+                  <a className="case">
+                    <div className="img saia"></div>
+                    <div className="info">
+                      <p>Saia</p>
+                      <div className="see-more purple">
+                        {!isResponsive && <ArrowRight width="11" height="19" viewBox="0 0 11 19" />}
+                        {isResponsive && <ArrowRight width="7" height="12" viewBox="0 0 11 19" />}
+                      </div>
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/practice" scroll={false}>
+                  <a className="case">
+                    <div className="img practice"></div>
+                    <div className="info">
+                      <p>Experiments</p>
+                      <div className="see-more blue">
+                        {!isResponsive && <ArrowRight width="11" height="19" viewBox="0 0 11 19" />}
+                        {isResponsive && <ArrowRight width="7" height="12" viewBox="0 0 11 19" />}
+                      </div>
+                    </div>
+                  </a>
+                </Link>
+              </CaseStudiesContainer>
             </Box>
           </>
         }

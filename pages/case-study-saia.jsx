@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { withSize } from 'react-sizeme'
 import { useRouter } from 'next/router'
 
+import ArrowRight from '../public/icons/arrow-right.svg';
 import Problems from '../public/icons/problems-purple.svg';
 import Goals from '../public/icons/goals-purple.svg';
 import UXMetrics from '../public/icons/ux-metrics-purple.svg';
@@ -14,8 +15,10 @@ import {
     Box,
     SummaryContainer,
     StudyItemContainer,
+    CaseStudiesContainer,
     ProductImageBox,
     Prototype,
+    Divider,
 } from '../components/Boxes';
 import { AnimatedLayout, AnimatedButton } from '../components/commons/Animated';
 import Image from '../components/commons/Image';
@@ -525,7 +528,7 @@ const CaseStudySaia = ({ size }) => {
             </Box>
             <Box noPadTop>
               <h2>Product Updates</h2>
-              <StudyItemContainer>
+              <StudyItemContainer noMb>
                 <div className="tag"><span>Iterations</span></div>
                 <p className="text">
                   I used the customer requests and data from analytics tools to prioritize what to create next. 
@@ -538,6 +541,35 @@ const CaseStudySaia = ({ size }) => {
                   </div>
                 </div>
               </StudyItemContainer>
+            </Box>
+            <Divider />
+            <Box>
+              <CaseStudiesContainer>
+                <Link href="/case-study-persona" scroll={false}>
+                  <a className="case">
+                    <div className="img persona"></div>
+                    <div className="info">
+                      <p>Persona</p>
+                      <div className="see-more">
+                        {!isResponsive && <ArrowRight width="11" height="19" viewBox="0 0 11 19" />}
+                        {isResponsive && <ArrowRight width="7" height="12" viewBox="0 0 11 19" />}
+                      </div>
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/practice" scroll={false}>
+                  <a className="case">
+                    <div className="img practice"></div>
+                    <div className="info">
+                      <p>Experiments</p>
+                      <div className="see-more blue">
+                        {!isResponsive && <ArrowRight width="11" height="19" viewBox="0 0 11 19" />}
+                        {isResponsive && <ArrowRight width="7" height="12" viewBox="0 0 11 19" />}
+                      </div>
+                    </div>
+                  </a>
+                </Link>
+              </CaseStudiesContainer>
             </Box>
           </>
         }

@@ -40,7 +40,7 @@ class Grid extends Component {
         </div>
         <div className="grid-item" key="key8">
           <Image 
-            src="/experiments/menu-1.gif"
+            src="experiments/search-1.gif"
           />
         </div>
         <div className="grid-item" key="key3">
@@ -91,7 +91,7 @@ class Grid extends Component {
         <div className="grid-item" key="key11"></div>
         <div className="grid-item" key="key12">
           <Image 
-            src="/experiments/search-1.gif"
+            src="/experiments/menu-1.gif"
           />
         </div>
       </StackGrid>

@@ -386,7 +386,7 @@ export const SummaryContainer = styled.div`
 export const CaseStudiesContainer = styled.div`
   display: flex;
   justify-content: ${props => props.full ? 'center' : 'space-between'};
-  margin-bottom: ${props => props.full ? '160px' : 'auto'};
+  margin-bottom: ${props => props.full ? '0px' : 'auto'};
 
   .case {
     width: ${props => props.full ? '100%' : '490px'};
@@ -454,7 +454,7 @@ export const CaseStudiesContainer = styled.div`
   @media only screen and (max-width: 1024px) {
     flex-direction: column;
     justify-content: center;
-    margin-bottom: ${props => props.full ? '80px' : 'auto'};
+    margin-bottom: ${props => props.full ? '0px' : 'auto'};
 
     .case {
       width: 100%;
@@ -499,7 +499,7 @@ export const StudyItemContainer = styled.div`
     background-color: white;
     border-radius: 32px;
     padding: 30px 40px 0px 40px;
-    margin-bottom: ${props => props.last ? "70px" : "50px"};
+    margin-bottom: ${props => props.last ? "70px" : props.noMb ? 0 : "50px"};
     ${cssShadowDefault};
 
     > .ux-process {
@@ -627,6 +627,10 @@ export const StudyItemContainer = styled.div`
           &.primary {
             justify-content: center;
             margin-bottom: 83px;
+          }
+
+          .margin-persona {
+            margin-left: 45px;
           }
 
           &.medium {
@@ -942,6 +946,9 @@ export const StudyItemContainer = styled.div`
 
         &.results {
         .stats {
+          .margin-persona {
+            margin-left: 0px;
+          }
           &.primary {
             margin-bottom: 30px;
 
