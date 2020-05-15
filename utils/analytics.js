@@ -10,7 +10,7 @@ export const logPageView = () => {
   console.log(`Logging pageview for ${window.location.pathname}`)
   ReactGA.set({ page: window.location.pathname })
   ReactGA.pageview(window.location.pathname)
-  // CRISP CODE
+  // CRISP CHAT
   window.$crisp = []
   window.CRISP_WEBSITE_ID = "5a23ecdd-d01f-4aea-87b2-480021d26264"
 
