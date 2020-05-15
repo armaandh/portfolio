@@ -14,7 +14,7 @@ import {
   LinkOutlined,
 } from '@ant-design/icons';
 
-// import { initAnalytics, logPageView } from '../../utils/analytics'
+import { initAnalytics, logPageView } from '../../utils/analytics'
 
 import Logo from '../../public/logos/logo-desktop.svg';
 import SaiaLogo from '../../public/logos/saia-logo.svg';
@@ -315,11 +315,11 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
 
   useEffect(() => {
     if (process.browser) {
-      // if (!window.GA_INITIALIZED) {
-      //   initAnalytics()
-      //   window.GA_INITIALIZED = true
-      // }
-      // logPageView()
+      if (!window.GA_INITIALIZED) {
+        initAnalytics()
+        window.GA_INITIALIZED = true
+      }
+      logPageView()
     }
   }, [])
 

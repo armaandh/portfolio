@@ -82,8 +82,6 @@ export const AnimatedButton = withSize()(({ children, fullProcess, onClick, size
           }}
         >
           <motion.span exit={{ scale: 0 }} transition={{ duration: 0 }}  className="text">See the full process</motion.span>
-          <motion.span exit={{ scale: 0 }} transition={{ duration: 0 }}>{!isResponsive && <BigArrowRight width="35" height="33" viewBox="0 0 35 33" />}</motion.span>
-          <motion.span exit={{ scale: 0 }} transition={{ duration: 0 }}>{isResponsive && <BigArrowRight width="19" height="17" viewBox="0 0 35 33" />}</motion.span>
         </Button>
       }
     </AnimatePresence>

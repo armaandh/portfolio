@@ -111,19 +111,19 @@ const Index = ({ size }) => {
           <h2>Favorite models</h2>
           <ModelsContainer>
             <div className="model">
-              {!isResponsive && <FirstPrinciples  width="104" height="104" viewBox="0 0 104 104" />}
-              {isResponsive && <FirstPrinciples  width="38" height="39" viewBox="0 0 104 104" />}
-              <p>Bayesian Thinking</p>
-            </div>
-            <div className="model">
-              {!isResponsive && <DesignThinking  width="104" height="104" viewBox="0 0 104 104" />}
+              {!isResponsive && <DesignThinking  width="85" height="85" viewBox="0 0 104 104" />}
               {isResponsive && <DesignThinking  width="38" height="39" viewBox="0 0 104 104" />}
               <p>Lean Startup</p>
             </div>
             <div className="model">
-              {!isResponsive && <SystemThinking  width="103" height="102" viewBox="0 0 103 102" />}
+              {!isResponsive && <SystemThinking  width="85" height="85" viewBox="0 0 103 102" />}
               {isResponsive && <SystemThinking  width="38" height="39" viewBox="0 0 103 102" />}
               <p>Design Thinking</p>
+            </div>
+            <div className="model">
+              {!isResponsive && <FirstPrinciples  width="85" height="85" viewBox="0 0 104 104" />}
+              {isResponsive && <FirstPrinciples  width="38" height="39" viewBox="0 0 104 104" />}
+              <p>Bayesian Thinking</p>
             </div>
           </ModelsContainer>
         </Box>

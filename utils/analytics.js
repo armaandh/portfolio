@@ -3,13 +3,25 @@ import { hotjar } from 'react-hotjar';
 
 export const initAnalytics = () => {
   console.log('GA init')
-  ReactGA.initialize('UA-155177692-1')
-  hotjar.initialize(911219, 6);
+  ReactGA.initialize('UA-155177692-2')
+  hotjar.initialize(1813828, 6);
 }
 export const logPageView = () => {
   console.log(`Logging pageview for ${window.location.pathname}`)
   ReactGA.set({ page: window.location.pathname })
   ReactGA.pageview(window.location.pathname)
+  // CRISP CODE
+  window.$crisp = []
+  window.CRISP_WEBSITE_ID = "5a23ecdd-d01f-4aea-87b2-480021d26264"
+
+  (function() {
+    var d = document
+    var s = d.createElement("script")
+
+    s.src = "https://client.crisp.chat/l.js"
+    s.async = 1
+    d.getElementsByTagName("head")[0].appendChild(s)
+  })()
 }
 export const logEvent = (category = '', action = '') => {
   if (category && action) {
