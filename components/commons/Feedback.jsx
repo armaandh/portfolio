@@ -18,7 +18,6 @@ export const Button = styled(motion.a, { excludeProps: ['fullProcess', 'blue'] }
     text-transform: uppercase;
     letter-spacing: 0.6px;
     margin-top: 4px;
-    margin-right: 26px;
   }
 
   .remove {

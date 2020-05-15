@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import { withSize } from 'react-sizeme'
 
 import { scrollToRef } from '../../utils/utils'
-import BigArrowRight from '../../public/icons/big-arrow-right.svg'
 import { Button } from './Feedback'
 import { Divider } from '../Boxes'
 
