@@ -318,6 +318,18 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
       if (!window.GA_INITIALIZED) {
         initAnalytics()
         window.GA_INITIALIZED = true
+        // CRISP CHAT
+        // window.$crisp = []
+        // window.CRISP_WEBSITE_ID = "5a23ecdd-d01f-4aea-87b2-480021d26264"
+
+        // (function() {
+        //   var d = document
+        //   var s = d.createElement("script")
+
+        //   s.src = "https://client.crisp.chat/l.js"
+        //   s.async = 1
+        //   d.getElementsByTagName("head")[0].appendChild(s)
+        // })()
       }
       logPageView()
     }
