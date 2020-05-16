@@ -57,7 +57,7 @@ const ContentLayout = styled(AntLayout)`
   .scroll-top {
     position: fixed;
     right: 20px;
-    bottom: 30px;
+    bottom: 80px;
     width: 67px;
     height: 67px;
     display: flex;
@@ -75,6 +75,14 @@ const ContentLayout = styled(AntLayout)`
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  @media only screen and (max-width: 540px) {
+    .scroll-top {
+      right: 8px;
+      bottom: 68px;
+    }
+  }
+  
 `
 
 const PageHeader = styled(Header)`
@@ -318,18 +326,6 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
       if (!window.GA_INITIALIZED) {
         initAnalytics()
         window.GA_INITIALIZED = true
-        // CRISP CHAT
-        // window.$crisp = []
-        // window.CRISP_WEBSITE_ID = "5a23ecdd-d01f-4aea-87b2-480021d26264"
-
-        // (function() {
-        //   var d = document
-        //   var s = d.createElement("script")
-
-        //   s.src = "https://client.crisp.chat/l.js"
-        //   s.async = 1
-        //   d.getElementsByTagName("head")[0].appendChild(s)
-        // })()
       }
       logPageView()
     }
@@ -340,6 +336,7 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
       <ContentLayout>
         <Head>
           <title>{title}</title>
+          <script dangerouslySetInnerHTML={{__html: `window.$crisp=[];window.CRISP_WEBSITE_ID="5a23ecdd-d01f-4aea-87b2-480021d26264";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();` }} />
         </Head>
         <ScrollToTopController />
         <div className="layout-container">

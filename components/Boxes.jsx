@@ -580,8 +580,11 @@ export const StudyItemContainer = styled.div`
       margin-bottom: ${props => props.mb ? props.mb : "80px"};
 
       & > .mask {
-        display: flex;
-        justify-content: center;
+        display: block;
+        & > * {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
 
       /* MARKET RESEARCH */
@@ -1143,9 +1146,10 @@ export const StudyItemContainer = styled.div`
 `
 
 export const Item = styled.img`
+    display: flex;
     width: ${props => props.width || "100%"};
-    height: ${props => props.height ? props.height : props.productImage ? "auto" : "100%"};
-    margin-bottom: ${props => props.mb || "auto"};
+    height: ${props => props.height ? props.height : props.productImage ? "auto" : "auto"};
+    margin-bottom: ${props => props.mb ? props.mb : props.productImage ? "auto" : "auto"};
 `
 
 export const SkillsContainer = styled.div`

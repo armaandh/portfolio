@@ -27,13 +27,13 @@ export default class Image extends Component {
           onClick={() => this.setState({ isOpen: true })}
           width={this.props.width}
           height={this.props.height}
-          imageTitle={this.props.title}
           mb={this.props.mb}
           productImage={this.props.productImage}
           className={this.props.className}
         />
         {isOpen && (
           <Lightbox
+            imageTitle={this.props.title}
             reactModalProps={{
               bodyOpenClassName: "overflow"
             }}

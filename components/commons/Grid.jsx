@@ -29,68 +29,80 @@ class Grid extends Component {
         leaved={scaleDown.leaved}
       >
         <div className="grid-item" key="key1">
-          <Image 
+          <Image
+            title="Calendar software"
             src="/experiments/calendar-app.png"
           />
         </div>
-        <div className="grid-item" key="key14">
-          <Image 
-            src="/experiments/save-2.png"
-          />
-        </div>
-        <div className="grid-item" key="key8">
-          <Image 
-            src="experiments/search-1.gif"
-          />
-        </div>
-        <div className="grid-item" key="key3">
-          <Image 
-            src="/experiments/insurance-credit-app.png"
-          />
-        </div>
-        <div className="grid-item" key="key2">
-          <Image 
-            src="/experiments/save-1.png"
-          />
-        </div>
         <div className="grid-item" key="key9">
-          <Image 
+          <Image
+            title="Meditation app"
             src="/experiments/meditation-app.png"
           />
         </div>
-        <div className="grid-item" key="key4">
-          <Image 
-            src="/experiments/components-1.png"
-          />
-        </div>
-        <div className="grid-item" key="key13">
-          <Image 
-            src="/experiments/calendar.png"
-          />
-        </div>
-        <div className="grid-item" key="key5">
-          <Image 
-            src="/experiments/financial-app-1.png"
-          />
-        </div>
-        <div className="grid-item" key="key6">
-          <Image 
-            src="/experiments/banking-1.png"
+        <div className="grid-item" key="key8">
+          <Image
+            title="Search micro-interaction"
+            src="experiments/search-1.gif"
           />
         </div>
         <div className="grid-item" key="key7">
-          <Image 
+          <Image
+            title="Flower pots e-commerce app"
             src="/experiments/flower-plant-app.png"
           />
         </div>
         <div className="grid-item" key="key10">
           <Image 
+            title="Insurance management software"
             src="/experiments/insurance-app-web.png"
           />
         </div>
-        <div className="grid-item" key="key11"></div>
-        <div className="grid-item" key="key12">
+        <div className="grid-item" key="key6">
           <Image 
+            title="Finance management software"
+            src="/experiments/banking-1.png"
+          />
+        </div>
+        <div className="grid-item" key="key5">
+          <Image 
+            title="Finance management app"
+            src="/experiments/financial-app-1.png"
+          />
+        </div>
+        <div className="grid-item" key="key3">
+          <Image
+            title="Finance management app"
+            src="/experiments/insurance-credit-app.png"
+          />
+        </div>
+        <div className="grid-item" key="key2">
+          <Image 
+            title="Blood donation management app: Patient info"
+            src="/experiments/save-1.png"
+          />
+        </div>
+        <div className="grid-item" key="key4">
+          <Image
+            title="Project management software components"
+            src="/experiments/components-1.png"
+          />
+        </div>
+        <div className="grid-item" key="key14">
+          <Image
+            title="Blood donation management app: Booking"
+            src="/experiments/save-2.png"
+          />
+        </div>
+        <div className="grid-item" key="key13">
+          <Image 
+            title="Calendar component"
+            src="/experiments/calendar.png"
+          />
+        </div>
+        <div className="grid-item" key="key12">
+          <Image
+            title="Menu micro-interaction"
             src="/experiments/menu-1.gif"
           />
         </div>
