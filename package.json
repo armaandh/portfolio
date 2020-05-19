@@ -30,6 +30,7 @@
     "react-hooks": "^1.0.1",
     "react-hotjar": "^2.2.0",
     "react-image-lightbox": "^5.1.1",
+    "react-scroll": "^1.7.16",
     "react-scroll-percentage": "^4.2.0",
     "react-sizeme": "^2.6.12",
     "react-stack-grid": "^0.7.1",

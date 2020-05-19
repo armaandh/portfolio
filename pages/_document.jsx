@@ -55,6 +55,9 @@ export default class MyDocument extends Document {
               border-collapse: collapse;
               border-spacing: 0;
             }
+            * {
+              -webkit-font-smoothing: antialiased;
+            }
             html,body {
               min-height: 100vh;
             }

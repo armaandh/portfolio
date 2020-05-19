@@ -36,7 +36,7 @@ const PageLayout = styled.div`
 `
 
 const ContentLayout = styled(AntLayout)`
-  position: relative;
+  /* position: relative; */
   max-width: 1124px;
   padding-left: 50px;
   padding-right: 50px;
@@ -318,11 +318,11 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
   const [ref, percentage] = useScrollPercentage()
   const router = useRouter()
   const isFullProcess = router.query.show === "fullprocess"
-  const showScrollTop = percentage > 0.30 && isFullProcess
+  const showScrollTop = percentage > 0.18 && isFullProcess
   const isResponsive = size.width < 1024
 
   useEffect(() => {
-    if (process.browser) {
+    if (process.browser && process.env.PROD) {
       if (!window.GA_INITIALIZED) {
         initAnalytics()
         window.GA_INITIALIZED = true
@@ -336,7 +336,7 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
       <ContentLayout>
         <Head>
           <title>{title}</title>
-          <script dangerouslySetInnerHTML={{__html: `window.$crisp=[];window.CRISP_WEBSITE_ID="5a23ecdd-d01f-4aea-87b2-480021d26264";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();` }} />
+          {process.env.PROD && <script dangerouslySetInnerHTML={{__html: `window.$crisp=[];window.CRISP_WEBSITE_ID="5a23ecdd-d01f-4aea-87b2-480021d26264";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();` }} />}
         </Head>
         <ScrollToTopController />
         <div className="layout-container">

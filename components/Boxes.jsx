@@ -1241,15 +1241,15 @@ export const SkillsContainer = styled.div`
   }
 `;
 
-export const Divider = styled(motion.div, { excludeProps: ['blue'] })`
+export const Divider = styled(motion.div, { excludeProps: ['blue', 'bigMargin'] })`
   width: 300px;
   height: 4px;
   border-radius: 5px;
   background: ${props => props.blue ? '#D1E6FF' : '#E7DDFD' };
-  margin: 90px auto 90px auto;
+  margin: ${props => props.bigMargin ? '90px auto 248px auto' : '90px auto 90px auto'}; ;
 
   @media only screen and (max-width: 1024px) {
-    margin: 40px auto 40px auto;
+    margin: ${props => props.bigMargin ? '40px auto 132px auto' : '40px auto 40px auto'};
   }
 `;
 

@@ -22,6 +22,7 @@ import {
     Divider,
 } from '../components/Boxes';
 import { AnimatedLayout, AnimatedButton } from '../components/commons/Animated';
+import { StickyNav } from '../components/commons/StickyNav';
 import Image from '../components/commons/Image';
 import { 
   Button,
@@ -112,7 +113,8 @@ const CaseStudyPersona = ({ size }) => {
         <AnimatedButton blue fullProcess={fullProcess} onClick={showFullProcess} />
         {fullProcess &&
           <>
-            <Box>
+            <StickyNav blue threshold={3410} mobileThreshold={3420} items={['problem', 'think', 'make', 'check', 'implement', 'launch', 'iterate']} />
+            <Box id="problem" className="element">
               <h2>Validating the problem</h2>
               <StudyItemContainer>
                 <p className="text solo">
@@ -182,7 +184,7 @@ const CaseStudyPersona = ({ size }) => {
                 </p>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="think" className="element" noPadTop>
               <h3>THINK</h3>
               <StudyItemContainer>
                 <p className="text solo">
@@ -219,7 +221,7 @@ const CaseStudyPersona = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="make" className="element" noPadTop>
               <h3>Make</h3>
               <StudyItemContainer>
                 <p className="text solo">
@@ -305,7 +307,7 @@ const CaseStudyPersona = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="check" className="element" noPadTop>
               <h3>Check</h3>
               <StudyItemContainer>
                 <p className="text solo">
@@ -361,7 +363,7 @@ const CaseStudyPersona = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="implement" className="element" noPadTop>
               <h2>IMPLEMENTING THE SOLUTION</h2>
               <StudyItemContainer>
                 <div className="tag blue"><span>Software Architecture</span></div>
@@ -446,7 +448,7 @@ const CaseStudyPersona = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="launch" className="element" noPadTop>
               <h2>LAUNCH &amp; RESULTS</h2>
               <StudyItemContainer last>
                 <div className="tag"><span>Analytics</span></div>
@@ -498,7 +500,7 @@ const CaseStudyPersona = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="iterate" className="element" noPadTop>
               <h2>Product Updates</h2>
               <StudyItemContainer noMb>
                 <div className="tag blue"><span>Iterations</span></div>

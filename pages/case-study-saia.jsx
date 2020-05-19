@@ -22,6 +22,7 @@ import {
 } from '../components/Boxes';
 import { AnimatedLayout, AnimatedButton } from '../components/commons/Animated';
 import Image from '../components/commons/Image';
+import { StickyNav } from '../components/commons/StickyNav';
 import { 
   Button,
   Progress,
@@ -111,7 +112,8 @@ const CaseStudySaia = ({ size }) => {
         <AnimatedButton fullProcess={fullProcess} onClick={showFullProcess} />
         {fullProcess &&
           <>
-            <Box>
+            <StickyNav threshold={3354} mobileThreshold={3513} items={['problem', 'understand', 'define', 'sketch', 'decide', 'design', 'validate', 'implement', 'launch', 'iterate']} />
+            <Box id="problem" className="element">
               <h2>Validating the problem</h2>
               <StudyItemContainer>
                 <div className="tag"><span>Market research</span></div>
@@ -193,7 +195,7 @@ const CaseStudySaia = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box>
               <h2>UX Process : Design Sprint</h2>
               <StudyItemContainer last>
                 <p className="text solo">
@@ -202,7 +204,7 @@ const CaseStudySaia = ({ size }) => {
                 </p>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="understand" className="element" noPadTop>
               <h3>UNDERSTANDING THE USER’S PROBLEM</h3>
               <StudyItemContainer mb="74px">
                 <div className="tag"><span>How Might We</span></div>
@@ -231,7 +233,7 @@ const CaseStudySaia = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="define" className="element" noPadTop>
               <h3>DEFINING WHAT TO FOCUS ON</h3>
               <StudyItemContainer last>
                 <div className="tag"><span>Action Priority Matrix</span></div>
@@ -247,7 +249,7 @@ const CaseStudySaia = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="sketch" className="element" noPadTop>
               <h3>SKETCHING SOLUTIONS</h3>
               <StudyItemContainer>
                 <div className="tag"><span>Crazy 8's</span></div>
@@ -276,7 +278,7 @@ const CaseStudySaia = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="decide" className="element" noPadTop>
               <h3>DECIDING ON THE APPROPRIATE SOLUTION</h3>
               <StudyItemContainer last>
                 <div className="tag"><span>Lean Canvas</span></div>
@@ -292,7 +294,7 @@ const CaseStudySaia = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="design" className="element" noPadTop>
               <h3>DESIGN &amp; PROTOTYPE</h3>
               <StudyItemContainer>
                 <p className="text solo">
@@ -346,7 +348,7 @@ const CaseStudySaia = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="validate" className="element" noPadTop>
               <h3>Validating the solution</h3>
               <StudyItemContainer last>
                 <div className="tag"><span>Usability testing</span></div>
@@ -384,7 +386,7 @@ const CaseStudySaia = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="implement" className="element" noPadTop>
               <h2>IMPLEMENTING THE SOLUTION</h2>
               <StudyItemContainer>
                 <div className="tag"><span>Software Architecture</span></div>
@@ -474,7 +476,7 @@ const CaseStudySaia = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="launch" className="element" noPadTop>
               <h2>LAUNCH &amp; RESULTS</h2>
               <StudyItemContainer last>
                 <div className="tag"><span>Analytics</span></div>
@@ -526,7 +528,7 @@ const CaseStudySaia = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box noPadTop>
+            <Box id="iterate" className="element" noPadTop>
               <h2>Product Updates</h2>
               <StudyItemContainer noMb>
                 <div className="tag"><span>Iterations</span></div>

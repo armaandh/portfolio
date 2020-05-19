@@ -34,6 +34,12 @@ class Grid extends Component {
             src="/experiments/calendar-app.png"
           />
         </div>
+        <div className="grid-item" key="key2">
+          <Image 
+            title="Blood donation app"
+            src="/experiments/save-mockup.png"
+          />
+        </div>
         <div className="grid-item" key="key9">
           <Image
             title="Meditation app"
@@ -76,12 +82,6 @@ class Grid extends Component {
             src="/experiments/insurance-credit-app.png"
           />
         </div>
-        <div className="grid-item" key="key2">
-          <Image 
-            title="Blood donation management app: Patient info"
-            src="/experiments/save-1.png"
-          />
-        </div>
         <div className="grid-item" key="key4">
           <Image
             title="Project management software components"
@@ -90,8 +90,8 @@ class Grid extends Component {
         </div>
         <div className="grid-item" key="key14">
           <Image
-            title="Blood donation management app: Booking"
-            src="/experiments/save-2.png"
+            title="Chart component"
+            src="/experiments/chart-1.png"
           />
         </div>
         <div className="grid-item" key="key13">
@@ -100,10 +100,22 @@ class Grid extends Component {
             src="/experiments/calendar.png"
           />
         </div>
+        <div className="grid-item" key="key15">
+          <Image
+            title="Bar chart component"
+            src="/experiments/bar-1.png"
+          />
+        </div>
         <div className="grid-item" key="key12">
           <Image
             title="Menu micro-interaction"
             src="/experiments/menu-1.gif"
+          />
+        </div>
+        <div className="grid-item" key="key16">
+          <Image
+            title="Round chart component"
+            src="/experiments/round-1.png"
           />
         </div>
       </StackGrid>

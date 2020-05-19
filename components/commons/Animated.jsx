@@ -87,6 +87,7 @@ export const AnimatedButton = withSize()(({ children, fullProcess, onClick, size
     <AnimatePresence>
       {fullProcess && <Divider
         ref={dividerRef}
+        bigMargin
         blue={blue}
         initial={{
           opacity: 0,
