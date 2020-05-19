@@ -112,7 +112,7 @@ const CaseStudySaia = ({ size }) => {
         <AnimatedButton fullProcess={fullProcess} onClick={showFullProcess} />
         {fullProcess &&
           <>
-            <StickyNav threshold={3354} responsiveThreshold={5274} mobileThreshold={3510} items={['problem', 'understand', 'define', 'sketch', 'decide', 'design', 'validate', 'implement', 'launch', 'iterate']} />
+            <StickyNav threshold={3354} responsiveThreshold={5000} mobileThreshold={3300} items={['problem', 'understand', 'define', 'sketch', 'decide', 'design', 'validate', 'implement', 'launch', 'iterate']} />
             <Box id="problem" className="element">
               <h2>Validating the problem</h2>
               <StudyItemContainer>

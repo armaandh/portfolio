@@ -1249,7 +1249,7 @@ export const Divider = styled(motion.div, { excludeProps: ['blue', 'bigMargin'] 
   margin: ${props => props.bigMargin ? '90px auto 248px auto' : '90px auto 90px auto'}; ;
 
   @media only screen and (max-width: 1024px) {
-    margin: ${props => props.bigMargin ? '40px auto 132px auto' : '40px auto 40px auto'};
+    margin: 40px auto 40px auto;
   }
 `;
 

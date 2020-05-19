@@ -60,15 +60,21 @@ const StickyContainer = styled.div`
   }
 
   @media only screen and (max-width: 1024px) {
+    position: fixed;
+    display: none;
     width: 100vw;
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
     border-radius: 0px;
-    margin-top: -92px;
+    margin-top: 0px;
     padding: 20px 0px 20px 0px;
     -webkit-box-align: center;
     align-items: center;
+
+    &.sticky {
+      display: flex;
+    }
 
 
     .links {
