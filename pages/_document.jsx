@@ -68,6 +68,7 @@ export default class MyDocument extends Document {
               -webkit-font-smoothing: antialiased;
               text-rendering: optimizelegibility;
               background-color: #F2F8FF;
+              overscroll-behavior: none;
             }
 
             body.overflow {
