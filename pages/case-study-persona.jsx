@@ -113,7 +113,7 @@ const CaseStudyPersona = ({ size }) => {
         <AnimatedButton blue fullProcess={fullProcess} onClick={showFullProcess} />
         {fullProcess &&
           <>
-            <StickyNav blue threshold={3410} responsiveThreshold={5005} mobileThreshold={3420} items={['problem', 'think', 'make', 'check', 'implement', 'launch', 'iterate']} />
+            <StickyNav blue threshold={3410} responsiveThreshold={5005} mobileThreshold={3417} items={['problem', 'think', 'make', 'check', 'implement', 'launch', 'iterate']} />
             <Box id="problem" className="element">
               <h2>Validating the problem</h2>
               <StudyItemContainer>

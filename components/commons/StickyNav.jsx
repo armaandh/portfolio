@@ -27,11 +27,9 @@ const StickyContainer = styled.div`
       font-size: 18px;
       font-weight: 500;
       color: #66768C;
-      text-transform: uppercase;
-
-      &:not(:last-of-type) {
-        margin-right: 20px;
-      }
+      text-transform: capitalize;
+      padding-right: 10px;
+      padding-left: 10px;
 
       &.active {
         position: relative;
@@ -39,7 +37,9 @@ const StickyContainer = styled.div`
           content: '';
           position: absolute;
           display: block;
-          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          width: 80%;
           height: 5px;
           bottom: -25px;
           border-radius: 15px;
@@ -77,11 +77,8 @@ const StickyContainer = styled.div`
       a {
         flex: 0 0 auto;
         font-size: 12px;
-        margin-right: auto;
-
-        &:not(:last-of-type) {
-          margin-right: 16px;
-        }
+        padding-right: 8px;
+        padding-left: 8px;
 
         &.active {
           &:after {
