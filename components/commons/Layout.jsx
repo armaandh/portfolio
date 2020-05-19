@@ -253,7 +253,7 @@ const PageHeader = styled(Header)`
         }
 
         .tag {
-          height: 26px;
+          height: 30px;
           padding: 7px 16px 7px 16px;
           background: #E7DDFD;
           font-size: 15px;

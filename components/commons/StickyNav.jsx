@@ -62,7 +62,6 @@ const StickyContainer = styled.div`
   @media only screen and (max-width: 1024px) {
     width: 100vw;
     flex-wrap: nowrap;
-    justify-content: flex-start;
     -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
     border-radius: 0px;
@@ -93,6 +92,10 @@ const StickyContainer = styled.div`
       }
     }
   }
+
+  @media only screen and (max-width: 550px) {
+    justify-content: flex-start;
+  }
 `;
 
 class Sticky extends Component {
@@ -114,9 +117,10 @@ class Sticky extends Component {
 
   handleScroll (event) {
     const isResponsive = this.props.size.width < 1024
-    let stickyScroll = window.scrollY;
-    const threshold = isResponsive ? this.props.mobileThreshold : this.props.threshold;
-    // console.log(stickyScroll)
+    const isMobile = this.props.size.width < 550
+    const stickyScroll = window.scrollY;
+    const threshold = isResponsive ? isMobile ? this.props.mobileThreshold : this.props.responsiveThreshold : this.props.threshold;
+    console.log(stickyScroll)
     if (stickyScroll < threshold && this.state.sticky === true) {
       this.setState({ sticky: false })
     } else if (stickyScroll > threshold && this.state.sticky === false) {
