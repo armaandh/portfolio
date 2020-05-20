@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
           <meta name="viewport" content="minimum-scale=1" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
-          <meta name="description" content="I research, design and build valuable software solutions to empower users and increase product growth." />
+          <meta name="description" content="I research, design and build valuable software solutions to empower users and increase business growth." />
           <link href="https://fonts.googleapis.com/css?family=Spartan:400,500,700,900&display=swap" rel="stylesheet" />
         </Head>
         <body>

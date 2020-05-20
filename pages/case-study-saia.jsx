@@ -112,7 +112,7 @@ const CaseStudySaia = ({ size }) => {
         <AnimatedButton fullProcess={fullProcess} onClick={showFullProcess} />
         {fullProcess &&
           <>
-            <StickyNav threshold={3354} responsiveThreshold={5000} mobileThreshold={3300} items={['problem', 'understand', 'define', 'sketch', 'decide', 'design', 'validate', 'implement', 'launch', 'iterate']} />
+            <StickyNav threshold={3354} responsiveThreshold={5000} mobileThreshold={3300} items={['problem', 'understand', 'define', 'sketch', 'decide', 'prototype', 'validate', 'implement', 'launch', 'iterate']} />
             <Box id="problem" className="element">
               <h2>Validating the problem</h2>
               <StudyItemContainer>
@@ -294,7 +294,7 @@ const CaseStudySaia = ({ size }) => {
                 </div>
               </StudyItemContainer>
             </Box>
-            <Box id="design" className="element" noPadTop>
+            <Box id="prototype" className="element" noPadTop>
               <h3>DESIGN &amp; PROTOTYPE</h3>
               <StudyItemContainer>
                 <p className="text solo">
@@ -338,7 +338,7 @@ const CaseStudySaia = ({ size }) => {
                 <p className="text">
                   I used some principles from Google’s material design system. 
                   I chose purple as the main color because, in color theory, it represents 
-                  imagination and creativity and content writers identify these values.
+                  imagination and creativity and content writers identify with these values.
                 </p>
                 <div className="content">
                   <div className="mask">
