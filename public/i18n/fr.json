@@ -7,7 +7,7 @@
             "meta-title": "Portfolio - JC Pratt-Delzenne",
             "title": "Je trouve des solutions<br />à vos problèmes.",
             "introduce": "Salut, je suis JC Pratt-Delzenne.",
-            "description": "Je recherche, design et créer des produits tech qui augmente l'experience utilisateur et amplifie la croissance des entreprises."
+            "description": "Je recherche, design et crée des produits tech qui augmentent l'expérience utilisateur et amplifient la croissance des entreprises."
         },
         "casestudy": {
             "title": "Études de cas"
@@ -28,7 +28,7 @@
             "bayes": "Pensée Bayésienne"
         },
         "practice": {
-            "title": "Exercice",
+            "title": "Exercices",
             "exp": "Expérimentations"
         }
     },
@@ -39,13 +39,13 @@
         "images": {
             "title1": "Logiciel de calendrier",
             "title2": "App de don de sang",
-            "title3": "App de meditation",
+            "title3": "App de méditation",
             "title4":  "Micro-interaction de recherche",
             "title5":  "App e-commerce de pots de fleurs",
-            "title6":  "Logiciel de gestion des assurances",
+            "title6":  "Logiciel de gestion d'assurances",
             "title7":  "Logiciel de gestion financière",
             "title8":  "App de gestion financière",
-            "title9":  "App de gestion des assurances et du crédit",
+            "title9":  "App de gestion d'assurances et de crédit",
             "title10":  "Composants d'un logiciel de gestion de projet",
             "title11":  "Composant d'un graphique",
             "title12":  "Composant d'un calendrier",
@@ -92,10 +92,10 @@
         },
         "problem": {
             "title": "Valider le problème",
-            "description": "Je suis passionné par la science de la personnalité depuis des années maintenant. J'ai beaucoup appris en lisant les livres de Brian R. Little, professeur de psychologie de la personnalité à Harvard, de Colin DeYoung, de Jordan B. Peterson. J'ai constaté un grand écart entre les connaissances scientifiques et les sites de tests.",
+            "description": "Je suis passionné par la science de la personnalité depuis des années maintenant. J'ai beaucoup appris en lisant les livres de Brian R. Little, professeur de psychologie de la personnalité à Harvard, de Colin DeYoung et de Jordan B. Peterson. J'ai constaté un grand écart entre les connaissances scientifiques et les sites de tests.",
             "analysis": {
                 "tag": "Analyse concurrentielle",
-                "description": "J'ai fait une analyse de la concurence pour mieux comprendre le paysage concurrentiel. La plupart des sites web de tests de personnalité utilisent des modèles inexacts et pseudo-scientifiques ou ont l'air très peu professionnels et frauduleux."
+                "description": "J'ai réalisé un benchmark pour mieux comprendre le paysage concurrentiel. La plupart des sites web de tests de personnalité utilisent des modèles inexacts et pseudo-scientifiques ou ont l'air très peu professionnels et frauduleux."
             },
             "interview": {
                 "tag": "Entretien conversationnel",
@@ -105,12 +105,12 @@
             },
             "thematic": {
                 "tag": "Analyse thématique",
-                "description": "J'ai décidé d'analyser les conversations et de les classer par thèmes. Il a été très utile de se référer aux éléments et aux thèmes pendant le processus de design."
+                "description": "J'ai décidé d'analyser les conversations et de les classer par thèmes. Il a été très utile de se référer aux éléments et aux thèmes pendant le process de design."
             }
         },
         "lean": {
             "title": "Process UX : LEAN UX",
-            "description": "J'ai utilisé le process Lean UX pour construire le produit. C'est génial d'énoncer mes hypothèses puis de les tester auprès des users dans un cycle itératif rapide."
+            "description": "J'ai utilisé le process Lean UX pour construire le produit. C'est très intéressant d'énoncer mes hypothèses puis de les tester auprès des users dans un cycle itératif rapide."
         },
         "think": {
             "title": "Penser",
@@ -142,33 +142,33 @@
             },
             "system": {
                 "tag": "Design System",
-                "description": "J'ai utilisé des couleurs vives et des formes rondes pour créer un sentiment de jeu et des interactions ludiques pour créer un sentiment de familiarité et de fun. Les décisions en matière de design ont été élaborées de manière à augmenter le taux de completion du test et de partage des résultats à des amis."
+                "description": "J'ai utilisé des couleurs vives et des formes rondes pour créer un sentiment de jeu et des interactions ludiques pour créer un sentiment de familiarité et de fun. Les décisions en matière de design ont été élaborées de manière à augmenter le taux de complétion du test et de partage des résultats à des amis."
             }
         },
         "check": {
             "title": "Vérifier",
-            "description": "Mon objectif dans cette phase était d'obtenir des feedbacks des users potentiels afin de découvrir les problèmes. J'ai fais des usability tests qualitatifs en personne, des usability tests quantitatifs pour recueillir des feedbacks.",
+            "description": "Mon objectif dans cette phase était d'obtenir des feedbacks des users potentiels afin de découvrir les problèmes. J'ai fais des tests d'utilisabilité qualitatifs en personne, des tests d'utilisabilité quantitatifs pour recueillir des feedbacks.",
             "quali": {
-                "tag": "Usability test qualitatif",
-                "description": "J'ai fait des entretiens conversationnels pour recueillir des données sur les interprétations de la façon dont ils perçoivent le produit. J'ai également effectué des usability tests pour savoir si la solution pouvait être comprise par différents types de users.",
+                "tag": "Test d'utilisabilité qualitatif",
+                "description": "J'ai fait des entretiens conversationnels pour recueillir des données sur les interprétations de la façon dont les users perçoivent le produit. J'ai également effectué des tests d'utilisabilité pour savoir si la solution pouvait être comprise par différents types de users.",
                 "quote1": "C'est vraiment beau et très facile à utiliser",
                 "quote2": "Ouah ! Je le partagerais à mes collègues",
                 "task": "Taux de complétion des tâches",
                 "exp": "Taux d'expériences positives"
             },
             "quanti": {
-                "tag": "Usability test quantitatif",
-                "description": "J'ai utilisé un outil pour amener 150 personnes à utiliser le prototype et recueillir des données sur les metrics UX."
+                "tag": "Test d'utilisabilité quantitatif",
+                "description": "J'ai utilisé un outil pour amener 150 personnes à parcourir le prototype et recueillir des données sur les metrics UX."
             }
         },
         "implement": {
             "title": "Implementer la solution",
             "architecture": {
                 "tag": "Architecture logicielle",
-                "description": "Après les itérations du design, avec des usability tests et les feedbacks des users, j'ai commencé à mettre en œuvre la solution. J'ai utilisé une architecture simple, mais en gardant à l'esprit la simplicité de la maintenance et le scale. Je voulais aussi que le coût soit le plus bas possible."
+                "description": "Après les itérations du design, avec des tests d'utilisabilité et les feedbacks des users, j'ai commencé à mettre en œuvre la solution. J'ai utilisé une architecture simple, mais en gardant à l'esprit la maintenance et le scale. Je voulais aussi que le coût soit le plus bas possible."
             },
             "stack": {
-                "tag": "La stack",
+                "tag": "Tech stack",
                 "description": "Je voulais rendre la stack simple mais scalable. La maintenabilité est également une question que je voulais aborder d'emblée. Aujourd'hui, cette stack est assez standard."
             }
         },
@@ -176,22 +176,22 @@
             "title": "Lancement & Resultats",
             "analytics": {
                 "tag": "Analytics",
-                "description": "Persona a été lancé sur Product Hunt et à terminé <span class='bold'>#4 Produit de la journée</span>. Pendant la journée de lancement, il a été #1 pendant plus de 13h. Le produit a reçu beaucoup de trafic, d'utilisation et de feedback.",
+                "description": "Persona a été lancé sur Product Hunt et à terminé <span class='bold'>#4 Produit de la journée</span>. Pendant la journée de lancement, il a été #1 pendant plus de 13 heures. Le produit a reçu beaucoup de trafic, d'utilisation et de feedback.",
                 "user": "Users",
                 "test": "Tests terminés",
-                "rate": "Taux de completion",
+                "rate": "Taux de complétion",
                 "views": "Pages vues"
             },
             "lessons": {
                 "title": "Leçons",
-                "phrase1": "Certains se soucient des données privés, mais pas tous",
+                "phrase1": "Certains se soucient des données privées, mais pas tous",
                 "phrase2": "Ne pas utiliser les bases de données gratuites pour la prod",
                 "phrase3": "Le partage peut déclencher un network effect massif",
                 "phrase4": "Un bon design augmente considérablement la confiance"
             }
         },
         "updates": {
-            "title": "Mise à jours produit",
+            "title": "Mises à jours produit",
             "iterations": {
                 "tag": "Iterations",
                 "description": "Après le lancement, j'ai reçu des demandes et j'ai observé beaucoup de comportements des users en utilisant des outils d'analytics. Je les ai priorisés et résolus en utilisant des modèles du Lean UX ou du Design Sprint et d'autres frameworks utiles."
@@ -210,7 +210,7 @@
             "title": "Synthèse",
             "problems": {
                 "title": "Problèmes",
-                "phrase1": "90% des contenus recoivent aucun trafic de Google",
+                "phrase1": "90% des contenus ne recoivent aucun trafic de Google",
                 "phrase2": "Les rédacteurs n'ont pas de compétences en SEO",
                 "phrase3": "Il faut beaucoup de temps pour écrire des articles",
                 "phrase4": "Les données générées lors de la recherche sont perdues"
@@ -243,7 +243,7 @@
                 "chart": {
                     "traffic": "Obtenir du trafic",
                     "quality": "Article de qualité",
-                    "quantity": "Quantité d'article",
+                    "quantity": "Quantité d'articles",
                     "time": "Trouver le temps",
                     "ideas": "Trouver des idées"
                 }
@@ -252,7 +252,7 @@
                 "tag": "Entretien conversationnel",
                 "description": "La conduite d'entretiens conversationnels était le meilleur moyen de recueillir de riches histoires et leurs interprétations du problème. Ce que je voulais découvrir, c'était leur expérience de la rédaction d'articles et les résultats finaux qu'ils désiraient obtenir.",
                 "quote1": "Je suis toujours perdu ! Il y a trop de choses à savoir",
-                "quote2": "J'ai le sentiment que mes résultats en deçà de mes efforts"
+                "quote2": "Mes résultats sont en deçà de mes efforts"
             },
             "thematic": {
                 "tag": "Analyse thématique",
@@ -261,7 +261,7 @@
         },
         "sprint": {
             "title": "Process UX : Design Sprint",
-            "description": "J'ai utilisé les exercices du Design Sprint parce que je pense qu'ils peuvent aider à créer un produit qui se concentre sur la résolution des problèmes du user. J'ai supprimé certaines limites comme le sprint de 5 jours, et je n'étais pas toujours avec plusieurs personnes."
+            "description": "J'ai utilisé les exercices du Design Sprint parce que je pense qu'ils peuvent aider à créer un produit qui se concentre sur la résolution des problèmes du user. J'ai supprimé certaines limites comme le sprint de 5 jours."
         },
         "understand": {
             "title": "Comprendre le problème du user",
@@ -275,9 +275,9 @@
             }
         },
         "define": {
-            "title": "Définir sur quoi se focus",
+            "title": "Définir le focus",
             "action": {
-                "tag": "Action priority matrix",
+                "tag": "Matrice de priorisation",
                 "description": "Il était très important d'établir des priorités car c'est une entreprise en solo et je devais tenir compte de mes ressources. Les matrices de décision sont très utiles pour évaluer et prioriser les idées. Les facteurs les plus importants avec lesquels il fallait travailler étaient la valeur pour le user et la difficulté technique."
             }
         },
@@ -289,7 +289,7 @@
             },
             "solution": {
                 "tag": "Solution Sketch",
-                "description": "J'ai wireframe une solution prometteuse au problème. Puis j'ai utilisé le résultat du Action Priority Matrix pour me focus sur les fonctionnalités qui peuvent donner une valeur significative au user et qui ne sont pas trop complexe à coder."
+                "description": "J'ai fait un wireframe d'une solution prometteuse au problème. Puis j'ai utilisé le résultat de la matrice de priorisation pour me concentrer sur les fonctionnalités qui peuvent donner une valeur significative au user et qui ne sont pas trop complexe à coder."
             }
         },
         "decide": {
@@ -301,18 +301,18 @@
         },
         "design": {
             "title": "Design & Prototype",
-            "description": "Dans cette phase, mon objectif était de créer une solution que les utilisateurs pourraient trouver claire et élégante. Je me suis focus sur le design de la solution avec Sketch et InVision pour produire un prototype cliquable.",
+            "description": "Dans cette phase, mon objectif était de créer une solution que les utilisateurs pourraient trouver claire et élégante. Je me suis concentré sur le design de la solution avec Sketch et InVision pour produire un prototype cliquable.",
             "prototype":"Voir Prototype",
             "system": {
                 "tag": "Design System",
-                "description": "J'ai utilisé certains principes du Design System de Google, Material. J'ai choisi le violet comme couleur principale parce que, dans la théorie des couleurs, il représente l'imagination et la créativité. Les auteurs de contenus s'identifient à ces valeurs."
+                "description": "J'ai utilisé certains principes du Design System de Google, Material. J'ai choisi le violet comme couleur principale parce que, dans la théorie des couleurs il représente l'imagination et la créativité. Les auteurs de contenus s'identifient à ces valeurs."
             }
         },
         "validate": {
             "title": "Valider la solution",
             "test": {
-                "tag": "Usability test",
-                "description": "J'ai fait des Usability Tests pour valider si la solution pouvait résoudre le problème du user. Je leur ai demandé d'effectuer certaines tâches via l'UI et de réfléchir à voix haute pendant l'exécution des tâches.",
+                "tag": "Test d'utilisabilité",
+                "description": "J'ai fait des tests d'utilisabilité pour verifier que la solution pouvait résoudre le problème du user. Je leur ai demandé d'effectuer certaines tâches via l'UI et de réfléchir à voix haute pendant l'exécution des tâches.",
                 "quote1": "Ça a l'air super !<br /> Cela semble très facile",
                 "quote2": "Cela pourrait m'aider à<br /> créer de meilleurs articles",
                 "task": "Taux de complétion des tâches",
@@ -323,36 +323,36 @@
             "title": "Implementer la solution",
             "architecture": {
                 "tag": "Architecture logicielle",
-                "description": "Après avoir itéré sur le design avec le feedback des testeurs, j'ai commencé à esquisser une architecture logicielle. L'idée était d'avoir une stack simple avec une stratégie de déploiement facile et pas coûteuse."
+                "description": "Après avoir itéré sur le design avec le feedback des testeurs, j'ai commencé à esquisser une architecture logicielle. L'idée était d'avoir une stack simple avec une stratégie de déploiement facile et peu coûteuse."
             },
             "stack": {
                 "tag": "Tech stack",
-                "description": "J'ai utilisé une stack moderne mais simple qui pouvait m'aider à mettre en œuvre la solution facilement. Je voulais également que la pile soit maintenable."
+                "description": "J'ai utilisé une stack moderne mais simple qui pouvait m'aider à mettre en œuvre la solution facilement. Je voulais également que la stack soit maintenable."
             }
         },
         "launch": {
             "title": "Lancement & Resultats",
             "analytics": {
                 "tag": "Analytics",
-                "description": "J'ai écrit des articles sur le blog de Saia et sur Medium. J'ai également envoyé des e-mails à une centaine de personnes qui étaient sur la liste d'attente. Aujourd'hui, tout le trafic est organique, la plupart envoyés par Google.",
+                "description": "J'ai écrit des articles sur le blog de Saia et sur Medium. J'ai également envoyé des e-mails à une centaine de personnes qui étaient sur la liste d'attente. Aujourd'hui, tout le trafic est organique, la plupart envoyé par Google.",
                 "user": "Users au lancement",
                 "register": "Taux d'inscription",
-                "traffic": "Trafic organique mensuel",
+                "traffic": "Visiteurs par mois",
                 "convert": "Taux de conversion",
                 "lesson": {
                     "title": "Leçons",
                     "phrase1": "Les users ne vous diront pas ce qui ne va pas, ils partiront",
                     "phrase2": "Concentrez-vous sur ceux qui voient la valeur de votre produit",
                     "phrase3": "Optimisez pour les conversions et non pour le trafic",
-                    "phrase4": "Les communautés en ligne peuvent vous donner d'excellent feedback"
+                    "phrase4": "Les communautés en ligne peuvent vous donner d'excellents feedbacks"
                 }
             }
         },
         "updates": {
-            "title": "Mise à jours produit",
+            "title": "Mises à jour produit",
             "iterations": {
                 "tag": "Iterations",
-                "description": "J'ai utilisé les requêtes des clients et les données des outils d'analytics pour déterminer les priorités des prochaines étapes. Le process UX que j'utilise dépend du type de user ou du problème business que je devais résoudre."
+                "description": "J'ai utilisé les requêtes des clients et les données des outils d'analytics pour déterminer les priorités des prochaines étapes. Le process UX que j'utilise dépend du type de user ou du problème business que je dois résoudre."
             }
         }
     },

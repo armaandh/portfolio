@@ -163,7 +163,7 @@ const CaseStudyPersona = ({ size }) => {
               <StudyItemContainer last>
                 <div className="tag blue"><span>{t('persona.problem.thematic.tag')}</span></div>
                 <p className="text">
-                  {t('persona.problem.interview.description')}
+                  {t('persona.problem.thematic.description')}
                 </p>
                 <div className="content">
                   <div className="mask">
@@ -203,7 +203,7 @@ const CaseStudyPersona = ({ size }) => {
               <StudyItemContainer last>
                 <div className="tag blue"><span>{t('persona.think.metrics.tag')}</span></div>
                 <p className="text">
-                  {t('persona.think.user.description')}
+                  {t('persona.think.metrics.description')}
                 </p>
                 <div className="content">
                   <div className="mask">
@@ -246,7 +246,7 @@ const CaseStudyPersona = ({ size }) => {
               </StudyItemContainer>
               <StudyItemContainer>
                 <div className="tag blue"><span>{t('persona.make.design.tag')}</span></div>
-                <p className="text solo">
+                <p className="text">
                   {t('persona.make.design.description')}
                 </p>
               </StudyItemContainer>
@@ -338,7 +338,7 @@ const CaseStudyPersona = ({ size }) => {
               <StudyItemContainer last>
                 <div className="tag blue"><span>{t('persona.check.quanti.tag')}</span></div>
                 <p className="text">
-                  {t('persona.check.quali.description')}
+                  {t('persona.check.quanti.description')}
                 </p>
                 <div className="content quotes">
                   <div className="mask">
