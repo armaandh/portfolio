@@ -4,9 +4,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styled from '@emotion/styled';
 import { withSize } from 'react-sizeme'
-import { Layout as AntLayout, Spin, Icon } from 'antd';
+import { Layout as AntLayout, Menu, Dropdown, Spin, Icon, } from 'antd';
 import { useScrollPercentage } from 'react-scroll-percentage'
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 import {
   HistoryOutlined,
@@ -22,6 +23,7 @@ import PersonaLogo from '../../public/logos/persona-logo.svg';
 import Linkedin from '../../public/icons/linkedin.svg';
 import Twitter from '../../public/icons/twitter.svg';
 import ArrowUp from '../../public/icons/arrow-up.svg';
+import Lang from '../../public/icons/lang.svg';
 import { cssShadowDefault } from "../../utils/theme";
 import { scrollTop, ScrollToTopController } from "../../utils/utils";
 
@@ -103,8 +105,24 @@ const PageHeader = styled(Header)`
     align-items: center;
     margin-bottom: 55px;
 
-    .social a:first-child {
-      margin-right: 10px;
+    .social {
+      display: flex;
+      align-items: center;
+
+      .language {
+        display: flex;
+        align-items: center;
+        margin-right: 18px;
+        cursor: pointer;
+
+        .lang:hover {
+          text-decoration: underline;
+        }
+      }
+
+      a:first-of-type {
+        margin-right: 10px;
+      }
     }
   }
 
@@ -166,7 +184,7 @@ const PageHeader = styled(Header)`
           }
 
 
-          div:nth-child(-n+3) {
+          div:nth-of-type(-n+3) {
             margin-right: 25px;
           }
 
@@ -198,6 +216,14 @@ const PageHeader = styled(Header)`
 
     nav {
       margin-bottom: 20px;
+      .social {
+        .language {
+          margin-right: 10px;
+          .lang {
+            font-size: 14px;
+          }
+        }
+      }
     }
 
     .content {
@@ -232,8 +258,8 @@ const PageHeader = styled(Header)`
         }
 
         .info {
-          div:nth-child(-n+3) {
-              margin-right: 10px;
+          div:nth-of-type(-n+3) {
+              margin-right: 6px;
           }
           div {
             span, a {
@@ -281,6 +307,7 @@ const PageHeader = styled(Header)`
         font-size: 20px;
       }
 
+
       &.case-study {
         .title {
           letter-spacing: 0.43px;
@@ -317,9 +344,27 @@ const PageFooter = styled(Footer)`
 function Layout({ children, title, home, h1, text, caseStudy, backButton, size }) {
   const [ref, percentage] = useScrollPercentage()
   const router = useRouter()
+  const { t, i18n } = useTranslation()
   const isFullProcess = router.query.show === "fullprocess"
   const showScrollTop = percentage > 0.18 && isFullProcess
   const isResponsive = size.width < 1024
+  const getCurrentLng = () => i18n.language || window.localStorage.i18nextLng || '';
+  const setLang = (lang) => {
+    window.localStorage.setItem("myLang", lang)
+    i18n.changeLanguage(lang)
+    // window.location.reload()
+  }
+
+  const menu = (
+    <Menu>
+      <Menu.Item onClick={() => setLang('en')}>
+        English
+      </Menu.Item>
+      <Menu.Item onClick={() => setLang('fr')}>
+        Français
+      </Menu.Item>
+    </Menu>
+  );
 
   useEffect(() => {
     if (process.browser && process.env.PROD) {
@@ -335,6 +380,12 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
     <PageLayout ref={ref}>
       <ContentLayout>
         <Head>
+          <meta name="description" content={t('home.header.description')} />
+          <meta property="og:description" content={t('home.header.description')} />
+          <meta name="title" content={title} />
+          <meta property="twitter:description" content="I research, design and build valuable software solutions to empower users and increase business growth." />
+          <meta property="og:title" content={title} />
+          <meta property="twitter:title" content={title} />
           <title>{title}</title>
           {process.env.PROD && <script dangerouslySetInnerHTML={{__html: `window.$crisp=[];window.CRISP_WEBSITE_ID="5a23ecdd-d01f-4aea-87b2-480021d26264";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();` }} />}
         </Head>
@@ -361,6 +412,15 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
                   </a>
                 </Link>
                 <div className="social">
+                <Dropdown overlayClassName="language-dropdown" overlay={menu} trigger={['click']}>
+                  <div className="language">
+                    {!isResponsive && <Lang width="24" height="24" viewBox="0 0 24 24" />}
+                    {isResponsive && <Lang width="16" height="16" viewBox="0 0 24 24" />}
+                    <span className="lang">
+                    {getCurrentLng() === 'fr' ? 'Français' : 'English'}
+                    </span>
+                  </div>
+                </Dropdown>
                   <Link href="https://www.linkedin.com/in/jean-claude-pratt-delzenne-5687646b/" scroll={false} prefetch={false}>
                     <a target="_blank">
                       {!isResponsive && <Linkedin width="50" height="49" viewBox="0 0 52 51" />}
@@ -376,9 +436,9 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
                 </div>
               </nav>
               {!caseStudy && home && <div className="content">
-                <h1 className="title">I solve problems for people.</h1>
-                <p>Hi, I’m JC Pratt-Delzenne.</p>
-                <p>I research, design, and build valuable software products to empower users and increase business growth.</p>
+                <h1 className="title" dangerouslySetInnerHTML={{ __html:t('home.header.title') }}></h1>
+                <p>{t('home.header.introduce')}</p>
+                <p>{t('home.header.description')}</p>
               </div>}
               {!caseStudy && !home && <div className="content">
                 <h1 className="title">{h1}</h1>
@@ -394,10 +454,10 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
                     <SaiaLogo width="23" height="23" viewBox="0 0 49 49" />
                     <span>Saia.ai</span>
                   </h1>
-                  <div className="tag saia">Case Study</div>
+                  <div className="tag saia">{t('saia.header.tag')}</div>
                 </div>}
                 <div className="info">
-                  {!isResponsive && <div className="tag saia">Case Study</div>}
+                  {!isResponsive && <div className="tag saia">{t('saia.header.tag')}</div>}
                   <div className="year">
                     {!isResponsive && <HistoryOutlined />}
                     {isResponsive && <HistoryOutlined style={{ fontSize: '14px' }} />}
@@ -406,7 +466,7 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
                   <div className="model">
                     {!isResponsive && <DollarCircleOutlined />}
                     {isResponsive && <DollarCircleOutlined style={{ fontSize: '14px' }} />}
-                    <span>SaaS</span>
+                    <span>{t('saia.header.model')}</span>
                   </div>
                   <div className="link">
                     {!isResponsive && <LinkOutlined />}
@@ -416,7 +476,7 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
                     </Link>
                   </div>
                 </div>
-                <p>Saia is a software for blog content writers. It guides them through the process of writing an article to increase their blog's organic traffic.</p>
+                <p>{t('saia.header.description')}</p>
               </div>}
               {caseStudy === "persona" && <div className="content case-study">
                 {!isResponsive && <h1 className="title">
@@ -428,10 +488,10 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
                     <PersonaLogo width="23" height="23" viewBox="0 0 49 49" />
                     <span>Persona</span>
                   </h1>
-                  <div className="tag persona">Case Study</div>
+                  <div className="tag persona">{t('persona.header.tag')}</div>
                 </div>}
                 <div className="info">
-                  {!isResponsive && <div className="tag persona">Case Study</div>}
+                  {!isResponsive && <div className="tag persona">{t('persona.header.tag')}</div>}
                   <div className="year">
                     {!isResponsive && <HistoryOutlined />}
                     {isResponsive && <HistoryOutlined style={{ fontSize: '14px' }} />}
@@ -440,7 +500,7 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
                   <div className="model">
                     {!isResponsive && <DollarCircleOutlined />}
                     {isResponsive && <DollarCircleOutlined style={{ fontSize: '14px' }} />}
-                    <span>Free</span>
+                    <span>{t('persona.header.model')}</span>
                   </div>
                   <div className="link">
                     {!isResponsive && <LinkOutlined />}
@@ -450,7 +510,7 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
                     </Link>
                   </div>
                 </div>
-                <p>Persona is a science-based personality test to help people in their personal growth journey.</p>
+                <p>{t('persona.header.description')}</p>
               </div>}
             </PageHeader>
           </motion.div>
@@ -478,7 +538,7 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
         </div>
       </ContentLayout>
       <PageFooter>
-        <p>&copy;{new Date().getFullYear()} Send me a 🍺 at prattdelzennejc@gmail.com</p>
+        <p>&copy;{new Date().getFullYear()} {t('footer.text')}</p>
       </PageFooter>
     </PageLayout>
   )

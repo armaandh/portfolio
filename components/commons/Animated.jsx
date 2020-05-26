@@ -2,6 +2,7 @@ import { useRef } from "react"
 import styled from '@emotion/styled';
 import { motion, AnimatePresence } from "framer-motion"
 import { withSize } from 'react-sizeme'
+import { useTranslation } from 'react-i18next';
 
 import { scrollToRef } from '../../utils/utils'
 import { Button } from './Feedback'
@@ -47,6 +48,7 @@ const variants = {
 }
 
 export const AnimatedButton = withSize()(({ children, fullProcess, onClick, size, blue }) => {
+  const { t, i18n } = useTranslation()
   const isResponsive = size.width < 1024
   const dividerRef = useRef()
   const executeScroll = () => scrollToRef(dividerRef)
@@ -80,7 +82,7 @@ export const AnimatedButton = withSize()(({ children, fullProcess, onClick, size
             duration: 1,
           }}
         >
-          <motion.span exit={{ scale: 0 }} transition={{ duration: 0 }}  className="text">See the full process</motion.span>
+          <motion.span exit={{ scale: 0 }} transition={{ duration: 0 }}  className="text">{t('common.fullprocess')}</motion.span>
         </Button>
       }
     </AnimatePresence>

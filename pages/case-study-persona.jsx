@@ -4,6 +4,8 @@ import Layout from '../components/commons/Layout';
 import Link from 'next/link';
 import { withSize } from 'react-sizeme'
 import { useRouter } from 'next/router'
+import { useTranslation } from 'react-i18next';
+import { motion } from "framer-motion";
 
 import ArrowRight from '../public/icons/arrow-right.svg';
 import Problems from '../public/icons/problems-blue.svg';
@@ -31,6 +33,7 @@ import {
 
 const CaseStudyPersona = ({ size }) => {
   const router = useRouter()
+  const { t, i18n } = useTranslation()
   const isResponsive = size.width < 1024
   const isSmallComputer = size.width < 1120
   const fullProcess = router.query?.show
@@ -43,47 +46,47 @@ const CaseStudyPersona = ({ size }) => {
   }
 
   return (
-    <Layout title="Persona's case study - JC Pratt-Delzenne" caseStudy="persona">
+    <Layout title={t('persona.header.meta-title')} caseStudy="persona">
       <AnimatedLayout className="case-study-persona">
         <Box>
-          <h2>Summary</h2>
+          <h2>{t('persona.summary.title')}</h2>
           <SummaryContainer>
             <div className="model">
               <Problems width="40" height="40" viewBox="0 0 40 40" />
-              <span className="title">Problems</span>
+              <span className="title">{t('persona.summary.problems.title')}</span>
               <ul>
-                  <li>Craving to understand ourselves and others</li>
-                  <li>Most scientific online tests look unprofessional or scammy</li>
-                  <li>Know the difference between us and society</li>
-                  <li>Be understood by my family and friends</li>
+                  <li>{t('persona.summary.problems.phrase1')}</li>
+                  <li>{t('persona.summary.problems.phrase2')}</li>
+                  <li>{t('persona.summary.problems.phrase3')}</li>
+                  <li>{t('persona.summary.problems.phrase4')}</li>
               </ul>
             </div>
             <div className="model">
               <Goals width="40" height="40" viewBox="0 0 40 40" />
-              <span className="title">Goals</span>
+              <span className="title">{t('persona.summary.goals.title')}</span>
               <ul>
-                  <li>Scientifically researched and validated model</li>
-                  <li>Attractive UI &amp; game-like interactions</li>
-                  <li>Compare user results to more than a million data points</li>
-                  <li>Ability to share to all major platforms</li>
+                  <li>{t('persona.summary.goals.phrase1')}</li>
+                  <li>{t('persona.summary.goals.phrase2')}</li>
+                  <li>{t('persona.summary.goals.phrase3')}</li>
+                  <li>{t('persona.summary.goals.phrase4')}</li>
               </ul>
             </div>
             <div className="model">
               <UXMetrics width="40" height="40" viewBox="0 0 40 40" />
-              <span className="title">UX Metrics</span>
+              <span className="title">{t('persona.summary.metrics.title')}</span>
               <ul>
-                  <li><span>70%</span> of users who start, complete the test</li>
-                  <li><span>89%</span> of users find the test engaging and beautiful</li>
-                  <li><span>82%</span> of users find results very insightful</li>
-                  <li><span>39%</span> of users share their results with 3+ friends</li>
+                  <li dangerouslySetInnerHTML={{ __html:t('persona.summary.metrics.phrase1') }}></li>
+                  <li dangerouslySetInnerHTML={{ __html:t('persona.summary.metrics.phrase2') }}></li>
+                  <li dangerouslySetInnerHTML={{ __html:t('persona.summary.metrics.phrase3') }}></li>
+                  <li dangerouslySetInnerHTML={{ __html:t('persona.summary.metrics.phrase4') }}></li>
               </ul>
             </div>
           </SummaryContainer>
         </Box>
         <Box>
-          <h2>UX process</h2>
+          <h2>{t('persona.uxprocess.title')}</h2>
           <StudyItemContainer>
-            <p className="ux-process">The user experience process I used was the LEAN UX framework.</p>
+            <p className="ux-process">{t('persona.uxprocess.description')}</p>
               {!isResponsive && <Image src="../persona/ux-process.png" width="359px"mb="85px" />}
               {isResponsive && <Image src="../persona/ux-process.png" />}
           </StudyItemContainer>
@@ -113,21 +116,18 @@ const CaseStudyPersona = ({ size }) => {
         <AnimatedButton blue fullProcess={fullProcess} onClick={showFullProcess} />
         {fullProcess &&
           <>
-            <StickyNav blue threshold={3410} responsiveThreshold={5005} mobileThreshold={3417} items={['problem', 'think', 'make', 'check', 'implement', 'launch', 'iterate']} />
+            <StickyNav blue threshold={3410} responsiveThreshold={5005} mobileThreshold={3417} items={t('persona.navigation')} />
             <Box id="problem" className="element">
-              <h2>Validating the problem</h2>
+              <h2>{t('persona.problem.title')}</h2>
               <StudyItemContainer>
                 <p className="text solo">
-                  I'm passionate about Personality Science for years now. 
-                  I’ve learned a lot reading books by Personality Psychology Harvard professor Brian R. Little, Colin DeYoung, Jordan B. Peterson. 
-                  I saw a big discrepancy between science knowledge and test websites.
+                  {t('persona.problem.description')}
                 </p>
               </StudyItemContainer>
               <StudyItemContainer>
-                <div className="tag blue"><span>Competitive Analysis</span></div>
+                <div className="tag blue"><span>{t('persona.problem.analysis.tag')}</span></div>
                 <p className="text">
-                  I made a competitive analysis to better understand the competitive landscape. 
-                  Most personality test websites use inaccurate and pseudoscientific models or look very unprofessional and scammy.
+                  {t('persona.problem.analysis.description')}
                 </p>
                 <div className="content">
                   <div className="mask">
@@ -137,22 +137,21 @@ const CaseStudyPersona = ({ size }) => {
                 </div>
               </StudyItemContainer>
               <StudyItemContainer>
-                <div className="tag blue"><span>Conversational Interview</span></div>
+                <div className="tag blue"><span>{t('persona.problem.interview.tag')}</span></div>
                 <p className="text">
-                  I needed to gather data about how people see personality websites tests, why they would take one, which criteria would make them decide on a test website instead of another. 
-                  Conversational interviews are great to collect rich stories and perspectives about individual decisions.
+                  {t('persona.problem.interview.description')}
                 </p>
                 <div className="content quotes">
                   <div className="quotes-container">
                     <div className="quote">
                       {!isResponsive && <Quote className="icon" width="70" height="58" viewBox="0 0 70 58" />}
                       {isResponsive && <Quote className="icon" width="26" height="22" viewBox="0 0 70 58" />}
-                      <p>I think if I know myself, I<br /> would feel better</p>
+                      <p dangerouslySetInnerHTML={{ __html:t('persona.problem.interview.quote1') }}></p>
                     </div>
                     <div className="quote">
                       {!isResponsive && <Quote width="70" height="58" viewBox="0 0 70 58" />}
                       {isResponsive && <Quote width="26" height="22" viewBox="0 0 70 58" />}
-                      <p>Many personality tests<br /> feel like astrology</p>
+                      <p dangerouslySetInnerHTML={{ __html:t('persona.problem.interview.quote2') }}></p>
                     </div>
                   </div>
                   <div className="mask">
@@ -162,10 +161,9 @@ const CaseStudyPersona = ({ size }) => {
                 </div>
               </StudyItemContainer>
               <StudyItemContainer last>
-                <div className="tag blue"><span>Thematic Analysis</span></div>
+                <div className="tag blue"><span>{t('persona.problem.thematic.tag')}</span></div>
                 <p className="text">
-                  I decided to analyze the conversations and categorizing them into themes. 
-                  It was very useful to refer back to the thematic items and themes during the design process.
+                  {t('persona.problem.interview.description')}
                 </p>
                 <div className="content">
                   <div className="mask">
@@ -176,28 +174,24 @@ const CaseStudyPersona = ({ size }) => {
               </StudyItemContainer>
             </Box>
             <Box noPadTop>
-              <h2>UX Process : Lean UX</h2>
+              <h2>{t('persona.lean.title')}</h2>
               <StudyItemContainer last>
                 <p className="text solo">
-                  I used the Lean UX process to build the product.
-                  It’s great to state my assumptions then test them with users in a fast iterative cycle.
+                  {t('persona.lean.description')}
                 </p>
               </StudyItemContainer>
             </Box>
             <Box id="think" className="element" noPadTop>
-              <h3>THINK</h3>
+              <h3>{t('persona.think.title')}</h3>
               <StudyItemContainer>
                 <p className="text solo">
-                  To map my assumptions I used multiple UX exercises. 
-                  Questions I needed was like: Why users would come? What are they looking for? What are their expectations? 
-                  How can I measure the success of the whole experience?
+                  {t('persona.think.description')}
                 </p>
               </StudyItemContainer>
               <StudyItemContainer mb="74px">
-                <div className="tag blue"><span>User journey map</span></div>
+                <div className="tag blue"><span>{t('persona.think.user.tag')}</span></div>
                 <p className="text">
-                  I used the User Journey Mapping exercise to identify the motivations, thoughts, 
-                  and the path a user will follow when they would want to take a personality test.
+                  {t('persona.think.user.description')}
                 </p>
                 <div className="content">
                   <div className="mask">
@@ -207,11 +201,9 @@ const CaseStudyPersona = ({ size }) => {
                 </div>
               </StudyItemContainer>
               <StudyItemContainer last>
-                <div className="tag blue"><span>Success &amp; signal metrics</span></div>
+                <div className="tag blue"><span>{t('persona.think.metrics.tag')}</span></div>
                 <p className="text">
-                  I wanted to gather data from the whole user experience. 
-                  Making decisions based on data increases the likelihood of product success. 
-                  Google HEART Model was a perfect match for exactly what I wanted to do.
+                  {t('persona.think.user.description')}
                 </p>
                 <div className="content">
                   <div className="mask">
@@ -222,18 +214,16 @@ const CaseStudyPersona = ({ size }) => {
               </StudyItemContainer>
             </Box>
             <Box id="make" className="element" noPadTop>
-              <h3>Make</h3>
+              <h3>{t('persona.make.title')}</h3>
               <StudyItemContainer>
                 <p className="text solo">
-                  Based on what I created before, I explored user interface ideas to solve the problem. 
-                  I went step by step: sketching by hand, wireframe, high fidelity mockup, and finally a prototype. 
+                  {t('persona.make.description')}
                 </p>
               </StudyItemContainer>
               <StudyItemContainer>
-                <div className="tag blue"><span>Crazy 8's</span></div>
+                <div className="tag blue"><span>{t('persona.make.crazy.tag')}</span></div>
                 <p className="text">
-                  I used the Crazy 8 exercise from the Design Sprint framework to generate ideas. 
-                  It’s a great exercise for the exploration phase.
+                  {t('persona.make.crazy.description')}
                 </p>
                 <div className="content">
                   <div className="mask">
@@ -243,10 +233,9 @@ const CaseStudyPersona = ({ size }) => {
                 </div>
               </StudyItemContainer>
               <StudyItemContainer>
-                <div className="tag blue"><span>Solution Sketch</span></div>
+                <div className="tag blue"><span>{t('persona.make.solution.tag')}</span></div>
                 <p className="text">
-                  I decided on a promising solution that could solve the problem. I made some wireframes of the solution. 
-                  I kept in mind that the goal was to create a valuable and high-quality MVP(Minimum Viable Product).
+                  {t('persona.make.solution.description')}
                 </p>
                 <div className="content">
                   <div className="mask">
@@ -256,10 +245,9 @@ const CaseStudyPersona = ({ size }) => {
                 </div>
               </StudyItemContainer>
               <StudyItemContainer>
-                <div className="tag blue"><span>Design &amp; Prototype</span></div>
+                <div className="tag blue"><span>{t('persona.make.design.tag')}</span></div>
                 <p className="text solo">
-                  After presenting the solution to potential users, I created the high-fidelity mockup.
-                  I wanted to make the design to create an enthusiastic and fun feeling to increase engagement and trust.
+                  {t('persona.make.design.description')}
                 </p>
               </StudyItemContainer>
               <ProductImageBox fullStudy>
@@ -288,16 +276,15 @@ const CaseStudyPersona = ({ size }) => {
                 <Prototype project="persona" target="_blank">
                   <div className="overlay"></div>
                   <div className="text">
-                    <span>See Prototype</span>
+                    <span>{t('persona.make.design.prototype')}</span>
                     <div className="divider"></div>
                   </div>
                 </Prototype>
               </Link>
               <StudyItemContainer last>
-                <div className="tag blue"><span>Design System</span></div>
+                <div className="tag blue"><span>{t('persona.make.system.tag')}</span></div>
                 <p className="text">
-                  I applied vivid colors and round shapes to create a feeling of play and game-like interactions to create a sense of familiarity and fun. 
-                  The design decisions were crafted to increase the completion rate of the test and the chance of users sharing results with friends.
+                  {t('persona.make.system.description')}
                 </p>
                 <div className="content">
                   <div className="mask">
@@ -308,30 +295,28 @@ const CaseStudyPersona = ({ size }) => {
               </StudyItemContainer>
             </Box>
             <Box id="check" className="element" noPadTop>
-              <h3>Check</h3>
+              <h3>{t('persona.check.title')}</h3>
               <StudyItemContainer>
                 <p className="text solo">
-                  My goal in this phase was to get feedback from potential users to uncover issues. 
-                  I used in-person qualitative usability tests, quantitative usability testing to gather feedback.
+                {t('persona.check.description')}
                 </p>
               </StudyItemContainer>
               <StudyItemContainer>
-                <div className="tag blue"><span>Qualitative usability testing</span></div>
+                <div className="tag blue"><span>{t('persona.check.quali.tag')}</span></div>
                 <p className="text">
-                  I’ve done conversational Interviews to gather story-rich data about interpretations of how they perceive the design. 
-                  I also performed usability tests to know if the solution could be understood by different types of users.
+                  {t('persona.check.quali.description')}
                 </p>
                 <div className="content quotes">
                   <div className="quotes-container">
                     <div className="quote">
                       {!isResponsive && <Quote className="icon" width="70" height="58" viewBox="0 0 70 58" />}
                       {isResponsive && <Quote className="icon" width="26" height="22" viewBox="0 0 70 58" />}
-                      <p>It’s really beautiful and<br /> very easy to use</p>
+                      <p dangerouslySetInnerHTML={{ __html:t('persona.check.quali.quote1') }}></p>
                     </div>
                     <div className="quote">
                       {!isResponsive && <Quote width="70" height="58" viewBox="0 0 70 58" />}
                       {isResponsive && <Quote width="26" height="22" viewBox="0 0 70 58" />}
-                      <p>Wow! I would share<br /> it with my colleagues</p>
+                      <p dangerouslySetInnerHTML={{ __html:t('persona.check.quali.quote2') }}></p>
                     </div>
                   </div>
                   <div className="mask">
@@ -341,19 +326,19 @@ const CaseStudyPersona = ({ size }) => {
                   <div className="stats below-stats">
                     <div className="stat">
                       <p className="number">78%</p>
-                      <p className="label">Tasks completion rate</p>
+                      <p className="label">{t('persona.check.quali.task')}</p>
                     </div>
                     <div className="stat">
                       <p className="number">89%</p>
-                      <p className="label">Positive experience rate</p>
+                      <p className="label">{t('persona.check.quali.exp')}</p>
                     </div>
                   </div>
                 </div>
               </StudyItemContainer>
               <StudyItemContainer last>
-                <div className="tag blue"><span>Quantitative usability testing</span></div>
+                <div className="tag blue"><span>{t('persona.check.quanti.tag')}</span></div>
                 <p className="text">
-                  Used a tool to bring 150 people to use the prototype and gather data about usability metrics.
+                  {t('persona.check.quali.description')}
                 </p>
                 <div className="content quotes">
                   <div className="mask">
@@ -364,12 +349,11 @@ const CaseStudyPersona = ({ size }) => {
               </StudyItemContainer>
             </Box>
             <Box id="implement" className="element" noPadTop>
-              <h2>IMPLEMENTING THE SOLUTION</h2>
+              <h2>{t('persona.implement.title')}</h2>
               <StudyItemContainer>
-                <div className="tag blue"><span>Software Architecture</span></div>
+                <div className="tag blue"><span>{t('persona.implement.architecture.tag')}</span></div>
                 <p className="text">
-                  After design iterations, with usability tests and user feedback, I started to implement the solution. 
-                  I used a simple architecture but with simple maintenance and scale in mind. I also wanted the least cost possible.
+                  {t('persona.implement.architecture.description')}
                 </p>
                 <div className="content">
                   <div className="mask">
@@ -379,9 +363,9 @@ const CaseStudyPersona = ({ size }) => {
                 </div>
               </StudyItemContainer>
               <StudyItemContainer last>
-                <div className="tag blue"><span>Tech Stack</span></div>
+                <div className="tag blue"><span>{t('persona.implement.stack.tag')}</span></div>
                 <p className="text">
-                  I wanted to make stack simple yet scalable. Maintainability is also an issue I wanted to tackle upfront. It's a standard stack today.
+                  {t('persona.implement.stack.description')}
                 </p>
                 <div className="content stacks">
                   <div className="stack">
@@ -449,51 +433,48 @@ const CaseStudyPersona = ({ size }) => {
               </StudyItemContainer>
             </Box>
             <Box id="launch" className="element" noPadTop>
-              <h2>LAUNCH &amp; RESULTS</h2>
+              <h2>{t('persona.launch.title')}</h2>
               <StudyItemContainer last>
-                <div className="tag"><span>Analytics</span></div>
-                <p className="text">
-                  Persona launched on Product Hunt and ended <span className="bold">#4 Product of the Day</span>. 
-                  During the launch day, it was #1 for more than 13 hours. The product got a lot of traffic, usage, and feedback.
-                </p>
+                <div className="tag"><span>{t('persona.launch.analytics.tag')}</span></div>
+                <p className="text" dangerouslySetInnerHTML={{ __html:t('persona.launch.analytics.description') }}></p>
                 <div className="content results">
                   <div className="stats primary">
                     <div className="stat">
                       <p className="number">12 000</p>
-                      <p className="label">Users</p>
+                      <p className="label">{t('persona.launch.analytics.user')}</p>
                     </div>
                   </div>
                   <div className="stats medium">
                     <div className="stat">
                       <p className="number">6 000</p>
-                      <p className="label">Test completed</p>
+                      <p className="label">{t('persona.launch.analytics.test')}</p>
                     </div>
                     <div className="stat margin-persona">
                       <p className="number">70%</p>
-                      <p className="label">Completion rate</p>
+                      <p className="label">{t('persona.launch.analytics.rate')}</p>
                     </div>
                     <div className="stat">
                       <p className="number">50 000</p>
-                      <p className="label">Page views</p>
+                      <p className="label">{t('persona.launch.analytics.views')}</p>
                     </div>
                   </div>
                   <div className="lessons">
                     <div className="model">
-                      <span className="title">UX Metrics</span>
+                      <span className="title">{t('persona.summary.metrics.title')}</span>
                       <ul>
-                        <li><span>70%</span> of users who start completes the test</li>
-                        <li><span>89%</span> of users find the test engaging and beautiful</li>
-                        <li><span>82%</span> of users find results very insightful</li>
-                        <li><span>39%</span> of users share their results to 3+ friends</li>
+                        <li dangerouslySetInnerHTML={{ __html:t('persona.summary.metrics.phrase1') }}></li>
+                        <li dangerouslySetInnerHTML={{ __html:t('persona.summary.metrics.phrase2') }}></li>
+                        <li dangerouslySetInnerHTML={{ __html:t('persona.summary.metrics.phrase3') }}></li>
+                        <li dangerouslySetInnerHTML={{ __html:t('persona.summary.metrics.phrase4') }}></li>
                       </ul>
                     </div>
                     <div className="model">
-                      <span className="title">Lessons</span>
+                      <span className="title">{t('persona.launch.lessons.title')}</span>
                       <ul>
-                          <li>Some people care a lot about how their data will be used, but most don't</li>
-                          <li>Don't use free databases for production use, it always bites back</li>
-                          <li>When peope like and share, they can start a massive network effect</li>
-                          <li>Good design increases trust by a huge margin</li>
+                          <li>{t('persona.launch.lessons.phrase1')}</li>
+                          <li>{t('persona.launch.lessons.phrase2')}</li>
+                          <li>{t('persona.launch.lessons.phrase3')}</li>
+                          <li>{t('persona.launch.lessons.phrase4')}</li>
                       </ul>
                     </div>
                   </div>
@@ -501,12 +482,11 @@ const CaseStudyPersona = ({ size }) => {
               </StudyItemContainer>
             </Box>
             <Box id="iterate" className="element" noPadTop>
-              <h2>Product Updates</h2>
+              <h2>{t('persona.updates.title')}</h2>
               <StudyItemContainer noMb>
-                <div className="tag blue"><span>Iterations</span></div>
+                <div className="tag blue"><span>{t('persona.updates.iterations.tag')}</span></div>
                 <p className="text">
-                  After the launch, I received requests and observed a lot of user behavior using analytics tools.
-                  I prioritized and solved them using models from Lean UX or Design Sprint and other useful frameworks.
+                  {t('persona.updates.iterations.description')}
                 </p>
                 <div className="content">
                   <div className="mask">
@@ -520,7 +500,13 @@ const CaseStudyPersona = ({ size }) => {
             <Box>
               <CaseStudiesContainer>
                 <Link href="/case-study-saia" scroll={false}>
-                  <a className="case">
+                  <motion.a
+                    className="case"
+                    whileHover={{
+                      scale: 1.04,
+                      transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                    }}
+                  >
                     <div className="img saia"></div>
                     <div className="info">
                       <p>Saia</p>
@@ -529,19 +515,25 @@ const CaseStudyPersona = ({ size }) => {
                         {isResponsive && <ArrowRight width="7" height="12" viewBox="0 0 11 19" />}
                       </div>
                     </div>
-                  </a>
+                  </motion.a>
                 </Link>
                 <Link href="/practice" scroll={false}>
-                  <a className="case">
+                  <motion.a 
+                    className="case"
+                    whileHover={{
+                      scale: 1.04,
+                      transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                    }}
+                  >
                     <div className="img practice"></div>
                     <div className="info">
-                      <p>Experiments</p>
+                      <p>{t('home.practice.exp')}</p>
                       <div className="see-more blue">
                         {!isResponsive && <ArrowRight width="11" height="19" viewBox="0 0 11 19" />}
                         {isResponsive && <ArrowRight width="7" height="12" viewBox="0 0 11 19" />}
                       </div>
                     </div>
-                  </a>
+                  </motion.a>
                 </Link>
               </CaseStudiesContainer>
             </Box>

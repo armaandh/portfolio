@@ -1,37 +1,41 @@
 import React, { Component } from 'react';
 import Lightbox from 'react-image-lightbox';
+import { withTranslation } from 'react-i18next';
+
 import { Item } from '../Boxes';
 
-const images = [
-  { title: "Calendar software", src: "/experiments/calendar-app.png"},
-  { title: "Blood donation app", src: "/experiments/save-mockup.png"},
-  { title: "Meditation app", src: "/experiments/meditation-app.png" },
-  { title: "Search micro-interaction", src: "/experiments/search-1.gif"},
-  { title: "Flower pots e-commerce app", src: "/experiments/flower-plant-app.png"},
-  { title: "Insurance management software", src: "/experiments/insurance-app-web.png"},
-  { title: "Finance management software", src: "/experiments/banking-1.png" },
-  { title: "Finance management app", src: "/experiments/financial-app-1.png"},
-  { title: "Insurance & Credit management app", src: "/experiments/insurance-credit-app.png"},
-  { title: "Project management software components", src: "/experiments/components-1.png"},
-  { title: "Chart component", src: "/experiments/chart-1.png"},
-  { title: "Calendar component", src: "/experiments/calendar.png"},
-  { title: "Bar chart component", src: "/experiments/bar-1.png"},
-  { title: "Menu micro-interaction", src: "/experiments/menu-1.gif"},
-  { title: "Round chart component", src: "/experiments/round-1.png"},
-];
-
-export default class Image extends Component {
+class Image extends Component {
   constructor(props) {
     super(props);
+    const { t, grid } = props
+
+    const images = grid ? [
+      { title: t('practice.images.title1'), src: "/experiments/calendar-app.png"},
+      { title: t('practice.images.title2'), src: "/experiments/save-mockup.png"},
+      { title: t('practice.images.title3'), src: "/experiments/meditation-app.png" },
+      { title: t('practice.images.title4'), src: "/experiments/search-1.gif"},
+      { title: t('practice.images.title5'), src: "/experiments/flower-plant-app.png"},
+      { title: t('practice.images.title6'), src: "/experiments/insurance-app-web.png"},
+      { title: t('practice.images.title7'), src: "/experiments/banking-1.png" },
+      { title: t('practice.images.title8'), src: "/experiments/financial-app-1.png"},
+      { title: t('practice.images.title9'), src: "/experiments/insurance-credit-app.png"},
+      { title: t('practice.images.title10'), src: "/experiments/components-1.png"},
+      { title: t('practice.images.title11'), src: "/experiments/chart-1.png"},
+      { title: t('practice.images.title12'), src: "/experiments/calendar.png"},
+      { title: t('practice.images.title13'), src: "/experiments/bar-1.png"},
+      { title: t('practice.images.title14'), src: "/experiments/menu-1.gif"},
+      { title: t('practice.images.title15'), src: "/experiments/round-1.png"},
+    ] : null;
 
     this.state = {
       isOpen: false,
-      photoIndex: props.grid ? images.findIndex((file) => file.src === props.src) : 0,
+      images,
+      photoIndex: grid ? images.findIndex((file) => file.src === props.src) : 0,
     };
   }
 
   render() {
-    const { isOpen, photoIndex } = this.state
+    const { isOpen, images, photoIndex } = this.state
     const { grid, src, title, width, height, productImage, className , mb } = this.props
     const imageTitle = grid ? images[photoIndex].title : title
     const mainSrc = grid ? images[photoIndex].src : src
@@ -68,3 +72,5 @@ export default class Image extends Component {
     );
   }
 }
+
+export default withTranslation()(Image)

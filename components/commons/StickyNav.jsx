@@ -123,7 +123,7 @@ class Sticky extends Component {
     const isMobile = this.props.size.width < 550
     const stickyScroll = window.scrollY;
     const threshold = isResponsive ? isMobile ? this.props.mobileThreshold : this.props.responsiveThreshold : this.props.threshold;
-    console.log(stickyScroll)
+    // console.log(stickyScroll)
     if (stickyScroll < threshold && this.state.sticky === true) {
       this.setState({ sticky: false })
     } else if (stickyScroll > threshold && this.state.sticky === false) {
@@ -139,11 +139,12 @@ class Sticky extends Component {
     const isResponsive = this.props.size.width < 1024
     const normalOffset = isResponsive ? -80 : -120
     const specialOffset = isResponsive ? -320 : -400
+    const items = this.props?.items ? eval(this.props?.items) : []
   	return (
       <StickyContainer blue={this.props.blue} className={`${this.state.sticky ? 'sticky' : ''}`} ref={this.stickyRef}>
         <div className="links">
-          {this.props?.items.map((name, i) => (
-            <Link key={`${name}${i}`} activeClass="active" className={name} to={name} spy={true} smooth={true} offset={i === 1 ? specialOffset : normalOffset} duration={500} onSetActive={this.handleSetActive.bind(this)}>
+          {items.map(({name, link}, i) => (
+            <Link key={`${link}${i}`} activeClass="active" className={link} to={link} spy={true} smooth={true} offset={i === 1 ? specialOffset : normalOffset} duration={500} onSetActive={this.handleSetActive.bind(this)}>
               {name}
             </Link>
           ))}

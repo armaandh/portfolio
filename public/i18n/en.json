@@ -1,0 +1,362 @@
+{
+    "common": {
+        "fullprocess": "see the fullprocess"
+    },
+    "home": {
+        "header": {
+            "meta-title": "Portfolio - JC Pratt-Delzenne",
+            "title": "I solve problems for people.",
+            "introduce": "Hi, I’m JC Pratt-Delzenne.",
+            "description": "I research, design, and build valuable software products to empower users and increase business growth."
+        },
+        "casestudy": {
+            "title": "Case Studies"
+        },
+        "skills": {
+            "title": "Skills",
+            "ux": "UX Design",
+            "psy": "Psychology",
+            "eng": "Engineering",
+            "ui": "UI Design",
+            "market": "Marketing",
+            "entre": "Entrepreneurship"
+        },
+        "favoritemodels": {
+            "title": "Favorite Models",
+            "lean": "Lean Startup",
+            "design": "Design Thinking",
+            "bayes": "Bayesian Thinking"
+        },
+        "practice": {
+            "title": "practice",
+            "exp": "Experiments"
+        }
+    },
+    "practice": {
+        "meta-title": "Experiments - JC Pratt-Delzenne",
+        "title": "Experiments",
+        "description": "I have a love of learning, growing my skillset and practicing regularly. Here are some of my experiments.",
+        "images": {
+            "title1": "Calendar software",
+            "title2": "Blood donation app",
+            "title3": "Meditation app",
+            "title4":  "Search micro-interaction",
+            "title5":  "Flower pots e-commerce app",
+            "title6":  "Insurance management software",
+            "title7":  "Finance management software",
+            "title8":  "Finance management app",
+            "title9":  "Insurance & Credit management app",
+            "title10":  "Project management software components",
+            "title11":  "Chart component",
+            "title12":  "Calendar component",
+            "title13":  "Bar chart component",
+            "title14":  "Menu micro-interaction",
+            "title15":  "Round chart component"
+        }
+    },
+    "persona": {
+        "navigation": "[{name: 'problem', link: 'problem'}, {name: 'think', link: 'think'}, {name: 'make', link: 'make'}, {name: 'check', link: 'check'}, {name: 'implement', link: 'implement'}, {name: 'launch', link: 'launch'}, {name: 'iterate', link: 'iterate'}]",
+        "header": {
+            "meta-title": "Persona's case study - JC Pratt-Delzenne",
+            "tag": "Case Study", 
+            "model": "Free",
+            "description": "Persona is a science-based personality test to help people in their personal growth journey."
+        },
+        "summary": {
+            "title": "Summary",
+            "problems": {
+                "title": "Problems",
+                "phrase1": "Craving to understand ourselves and others",
+                "phrase2": "Most scientific online tests look unprofessional or scammy",
+                "phrase3": "Know the difference between us and society",
+                "phrase4": "Be understood by my family and friends"
+            },
+            "goals": {
+                "title": "Goals",
+                "phrase1": "Scientifically researched and validated model",
+                "phrase2": "Attractive UI & game-like interactions",
+                "phrase3": "Compare user results to more than a million data points",
+                "phrase4": "Ability to share to all major platforms"
+            },
+            "metrics": {
+                "title": "UX Metrics",
+                "phrase1": "<span>70%</span> of users who start, complete the test",
+                "phrase2": "<span>89%</span> of users find the test engaging and beautiful",
+                "phrase3": "<span>82%</span> of users find results very insightful",
+                "phrase4": "<span>39%</span> of users share their results with 3+ friends"
+            }
+        },
+        "uxprocess": {
+            "title": "UX Process",
+            "description": "The user experience process I used was the LEAN UX framework."
+        },
+        "problem": {
+            "title": "Validating the problem",
+            "description": "I'm passionate about Personality Science for years now. I’ve learned a lot reading books by Personality Psychology Harvard professor Brian R. Little, Colin DeYoung, Jordan B. Peterson. I saw a big discrepancy between science knowledge and test websites.",
+            "analysis": {
+                "tag": "Competitive Analysis",
+                "description": "I made a competitive analysis to better understand the competitive landscape. Most personality test websites use inaccurate and pseudoscientific models or look very unprofessional and scammy."
+            },
+            "interview": {
+                "tag": "Conversational Interview",
+                "description": "I needed to gather data about how people see personality websites tests, why they would take one, which criteria would make them decide on a test website instead of another. Conversational interviews are great to collect rich stories and perspectives about individual decisions.",
+                "quote1": "I think if I know myself, I<br /> would feel better",
+                "quote2": "Many personality tests<br /> feel like astrology"
+            },
+            "thematic": {
+                "tag": "Thematic Analysis",
+                "description": "I decided to analyze the conversations and categorizing them into themes. It was very useful to refer back to the thematic items and themes during the design process."
+            }
+        },
+        "lean": {
+            "title": "UX Process : LEAN UX",
+            "description": "I used the Lean UX process to build the product. It’s great to state my assumptions then test them with users in a fast iterative cycle."
+        },
+        "think": {
+            "title": "Think",
+            "description": "To map my assumptions I used multiple UX exercises. Questions I needed was like: Why users would come? What are they looking for? What are their expectations? How can I measure the success of the whole experience?",
+            "user": {
+                "tag": "User journey map",
+                "description": "I used the User Journey Mapping exercise to identify the motivations, thoughts, and the path a user will follow when they would want to take a personality test."
+            },
+            "metrics": {
+                "tag": "Success & Signal Metrics",
+                "description": "I wanted to gather data from the whole user experience. Making decisions based on data increases the likelihood of product success. Google HEART Model was a perfect match for exactly what I wanted to do."
+            }
+        },
+        "make": {
+            "title": "Make",
+            "description": "Based on what I created before, I explored user interface ideas to solve the problem. I went step by step: sketching by hand, wireframe, high fidelity mockup, and finally a prototype.",
+            "crazy": {
+                "tag": "Crazy 8's",
+                "description": "I used the Crazy 8 exercise from the Design Sprint framework to generate ideas. It’s a great exercise for the exploration phase."
+            },
+            "solution": {
+                "tag": "Solution Sketch",
+                "description": "I decided on a promising solution that could solve the problem. I made some wireframes of the solution. I kept in mind that the goal was to create a valuable and high-quality MVP(Minimum Viable Product)."
+            },
+            "design": {
+                "tag": "Design & Prototype",
+                "description": "After presenting the solution to potential users, I created the high-fidelity mockup. I wanted to make the design to create an enthusiastic and fun feeling to increase engagement and trust.",
+                "prototype": "See Prototype"
+            },
+            "system": {
+                "tag": "Design System",
+                "description": "I applied vivid colors and round shapes to create a feeling of play and game-like interactions to create a sense of familiarity and fun. The design decisions were crafted to increase the completion rate of the test and the chance of users sharing results with friends."
+            }
+        },
+        "check": {
+            "title": "Check",
+            "description": "My goal in this phase was to get feedback from potential users to uncover issues. I used in-person qualitative usability tests, quantitative usability testing to gather feedback.",
+            "quali": {
+                "title": "Qualitative usability testing",
+                "description": "I’ve done conversational Interviews to gather story-rich data about interpretations of how they perceive the design. I also performed usability tests to know if the solution could be understood by different types of users.",
+                "quote1": "It’s really beautiful and<br /> very easy to use",
+                "quote2": "Wow! I would share<br /> it with my colleagues",
+                "task": "Tasks completion rate",
+                "exp": "Positive experience rate"
+            },
+            "quanti": {
+                "title": "Quantitative usability testing",
+                "description": "Used a tool to bring 150 people to use the prototype and gather data about usability metrics."
+            }
+        },
+        "implement": {
+            "title": "Implementing the solution",
+            "architecture": {
+                "tag": "Software architecture",
+                "description": "After design iterations, with usability tests and user feedback, I started to implement the solution. I used a simple architecture but with simple maintenance and scale in mind. I also wanted the least cost possible."
+            },
+            "stack": {
+                "tag": "Tech stack",
+                "description": "I wanted to make stack simple yet scalable. Maintainability is also an issue I wanted to tackle upfront. It's a standard stack today."
+            }
+        },
+        "launch": {
+            "title": "Launch & Results",
+            "analytics": {
+                "tag": "Analytics",
+                "description": "Persona launched on Product Hunt and ended <span class='bold'>#4 Product of the Day</span>. During the launch day, it was #1 for more than 13 hours. The product got a lot of traffic, usage, and feedback.",
+                "user": "Users",
+                "test": "Tests completed",
+                "rate": "Completion rate",
+                "views": "Page views"
+            },
+            "lessons": {
+                "title": "Lessons",
+                "phrase1": "Some people care a lot about how their data will be used, but most don't",
+                "phrase2": "Don't use free databases for production use, it always bites back",
+                "phrase3": "When peope like and share, they can start a massive network effect",
+                "phrase4": "Good design increases trust by a huge margin"
+            }
+        },
+        "updates": {
+            "title": "Product Updates",
+            "iterations": {
+                "tag": "Iterations",
+                "description": "After the launch, I received requests and observed a lot of user behavior using analytics tools. I prioritized and solved them using models from Lean UX or Design Sprint and other useful frameworks."
+            }
+        }
+    },
+    "saia": {
+        "navigation": "[{name: 'problem', link: 'problem'}, {name: 'understand', link: 'understand'}, {name: 'define', link: 'define'}, {name: 'sketch', link: 'sketch'}, {name: 'decide', link: 'decide'}, {name: 'prototype', link: 'prototype'}, {name: 'validate', link: 'validate'}, {name: 'implement', link: 'implement'}, {name: 'launch', link: 'launch'}, {name: 'iterate', link: 'iterate'}]",
+        "header": {
+            "meta-title": "Saia's case study - JC Pratt-Delzenne",
+            "tag": "Case Study", 
+            "model": "SaaS",
+            "description": "Saia is a software for blog content writers. It guides them through the process of writing an article to increase their blog's organic traffic."
+        },
+        "summary": {
+            "title": "Summary",
+            "problems": {
+                "title": "Problems",
+                "phrase1": "90% of contents get no traffic from Google",
+                "phrase2": "Most blog writers don't have Marketing or SEO skills",
+                "phrase3": "It takes a lot of time to write articles",
+                "phrase4": "Knowledge generated during research for a past article is lost"
+            },
+            "goals": {
+                "title": "Goals",
+                "phrase1": "Help the content writer on SEO",
+                "phrase2": "Easy process to follow",
+                "phrase3": "Simplify the research and information gathering",
+                "phrase4": "Keep all knowledge generated through the process"
+            },
+            "metrics": {
+                "title": "UX Metrics",
+                "phrase1": "<span>62%</span> of users see an increase in article traffic",
+                "phrase2": "<span>71%</span> of users think the process is clear",
+                "phrase3": "<span>67%</span> of users take less time to write articles",
+                "phrase4": "<span>43%</span> of users use previous research in new articles"
+            }
+        },
+        "uxprocess": {
+            "title": "UX Process",
+            "description": "The user experience process I used was the Design Sprint framework"
+        },
+        "problem": {
+            "title": "Validating the problem",
+            "market": {
+                "tag": "Market research",
+                "description": "To acquire a deep understanding of the problem, I’ve done a market research and uncovered lots of issues from bloggers and freelancers with their blogs. I had access to a lot of research that has been done online.",
+                "num": "Sites receive 0 monthly traffic",
+                "chart": {
+                    "traffic": "Getting traffic",
+                    "quality": "Content quality",
+                    "quantity": "Content quantity",
+                    "time": "Finding time",
+                    "ideas": "Finding ideas"
+                }
+            },
+            "interview": {
+                "tag": "Conversational Interview",
+                "description": "Conducting Conversational Interviews was the best way to collect rich stories and their interpretations of the problem. What I wanted to uncover from people was their experiences of writing blog posts and the end results they wanted the blog post to deliver.",
+                "quote1": "I’m always lost! There’s too much to know",
+                "quote2": "I feel that I get poor results compared to my efforts"
+            },
+            "thematic": {
+                "tag": "Thematic Analysis",
+                "description": "I decided to analyze the conversations and categorizing them into themes. It will be very useful to refer back to the thematic items and themes during the design process."
+            }
+        },
+        "sprint": {
+            "title": "UX Process : Design Sprint",
+            "description": "I used Design Sprint exercises because I think they can help create a product that is focused on solving the user’s problems. I removed some limits from the framework, like the 5 days sprint, and wasn’t always with multiple people."
+        },
+        "understand": {
+            "title": "Understanding the user's problem",
+            "how": {
+                "tag": "How might we",
+                "description": "I used the How Might We exercise to generate ideas from the research insights, the idea was to explore ways to address the user’s pain points."
+            },
+            "feature": {
+                "tag": "Feature ideas",
+                "description": "I conducted a brainstorming session to generate a lot of ideas of features that could solve questions from the How Might We session."
+            }
+        },
+        "define": {
+            "title": "Defining what to focus on",
+            "action": {
+                "tag": "Action priority matrix",
+                "description": "Prioritization was very important because it's a solo business and I had to take into account my resources. Decision matrices are great to evaluate and prioritize ideas. The most important factors to work with were User value and Technical Difficulty."
+            }
+        },
+        "sketch": {
+            "title": "Sketching the solution",
+            "crazy": {
+                "tag": "Crazy 8's",
+                "description": "I explored multiple solutions using crazy 8’s exercise. Sketching by hand helped me move fast from an idea to another."
+            },
+            "solution": {
+                "tag": "Solution Sketch",
+                "description": "I wireframed a promising solution to the problem. I used the action priority matrix result to focus on features that can give significant value to the user and is not too complex technically to code."
+            }
+        },
+        "decide": {
+            "title": "Deciding on the appropriate solution",
+            "lean": {
+                "tag": "Lean canvas",
+                "description": "After the exploration, I needed to have a view of the whole system. To do that, I used the Lean Canvas. The canvas helps to break down how will work each part of the business in a fast and clear process."
+            }
+        },
+        "design": {
+            "title": "Design & Prototype",
+            "description": "In this phase, my goal was to create a solution users could find clear and elegant. I focused on designing the solution with Sketch and InVision to produce a clickable Prototype.",
+            "prototype": "See Prototype",
+            "system": {
+                "tag": "Design System",
+                "description": "I used some principles from Google’s material design system. I chose purple as the main color because, in color theory, it represents imagination and creativity and content writers identify with these values."
+            }
+        },
+        "validate": {
+            "title": "Validating the solution",
+            "test": {
+                "tag": "Usability testing",
+                "description": "I’ve done usability tests to validate if the solution could solve the user's problem. I asked them to do some tasks through the user interface and to think out loud while performing the tasks.",
+                "quote1": "It looks great! It feels very effortless",
+                "quote2": "This could help me create better blog posts",
+                "task": "Tasks completion rate",
+                "exp":"Positive experience rate"
+            }
+        },
+        "implement": {
+            "title": "Implementing the solution",
+            "architecture": {
+                "tag": "Software architecture",
+                "description": "After I’ve iterated on the design with testers' feedback, I started to draft a software architecture. The idea was to have a simple stack with an easy and cheap deployment strategy."
+            },
+            "stack": {
+                "tag": "Tech stack",
+                "description": "I used a modern yet simple stack that could help me implement the solution easily. I also wanted the stack to be maintainable."
+            }
+        },
+        "launch": {
+            "title": "Launch & Results",
+            "analytics": {
+                "tag": "Analytics",
+                "description": "I wrote articles on Saia’s blog and on Medium. I also sent emails to a hundred who were on the waiting list. Today all traffic is organic, mostly sent by Google.",
+                "user": "Users at launch",
+                "register": "Registration rate",
+                "traffic": "Monthly organic traffic",
+                "convert": "Conversion rate",
+                "lesson": {
+                    "title": "Lessons",
+                    "phrase1": "Most users won’t tell you what's wrong, they will just leave",
+                    "phrase2": "Focus on those that can see the value of your product",
+                    "phrase3": "Optimize for conversions not for traffic",
+                    "phrase4": "Online communities can give you great feedback"
+                }
+            }
+        },
+        "updates": {
+            "title": "Product Updates",
+            "iterations": {
+                "tag": "Iterations",
+                "description": "I used the customer requests and data from analytics tools to prioritize what to create next. The UX process I use depends on the kind of user or business problem I had to solve."
+            }
+        }
+    },
+    "footer": {
+        "text": "Send me a 🍺 at prattdelzennejc@gmail.com"
+    }
+}

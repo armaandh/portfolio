@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { motion } from "framer-motion";
 
 export const Button = styled(motion.a, { excludeProps: ['fullProcess', 'blue'] })`
-  max-width: 510px;
+  max-width: 550px;
   display: flex;
   justify-content: center;
   align-items: center;

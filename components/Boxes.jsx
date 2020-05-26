@@ -195,7 +195,7 @@ export const Prototype = styled.a`
     top: 0; left: 0; bottom: 0; right: 0;
 
     span {
-      font-size: 60px;
+      font-size: 45px;
       font-weight: 700;
       letter-spacing: 1.28px;
       text-transform: uppercase;
@@ -1064,10 +1064,11 @@ export const StudyItemContainer = styled.div`
           .data {
             .chart {
               .label {
-                width: 58px;
+                width: 66px;
                 font-size: 12px;
                 text-align: right;
                 line-height: 15px;
+                margin-right: 10px;
               }
 
               .result {
@@ -1171,7 +1172,7 @@ export const SkillsContainer = styled.div`
     width: 33%;
     height: 170px;
 
-    &:nth-child(-n+3) {
+    &:nth-of-type(-n+3) {
       margin-bottom: 60px;
     }
 
@@ -1220,7 +1221,7 @@ export const SkillsContainer = styled.div`
     border-radius: 30px;
     padding: 30px;
 
-    &:nth-child(-n+3) {
+    &:nth-of-type(-n+3) {
       margin-bottom: 0px;
     }
 

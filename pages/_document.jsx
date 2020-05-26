@@ -1,5 +1,7 @@
 import Document, { Head, Main, NextScript } from 'next/document';
-import { Global, css } from '@emotion/core'
+import { Global, css } from '@emotion/core';
+
+import { cssShadowDefault } from '../utils/theme'
 
 export default class MyDocument extends Document {
   render() {
@@ -14,7 +16,15 @@ export default class MyDocument extends Document {
           <meta name="viewport" content="minimum-scale=1" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
-          <meta name="description" content="I research, design and build valuable software solutions to empower users and increase business growth." />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://prattdelzenne.com/" />
+          <meta property="og:image" content="https://prattdelzenne.com/meta.png" />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://prattdelzenne.com/" />
+          <meta property="twitter:image" content="https://prattdelzenne.com/meta.png" />
+          
           <link href="https://fonts.googleapis.com/css?family=Spartan:400,500,700,900&display=swap" rel="stylesheet" />
         </Head>
         <body>
@@ -73,6 +83,13 @@ export default class MyDocument extends Document {
 
             body.overflow {
               overflow: hidden;
+            }
+
+            .language-dropdown {
+              ul {
+                border-radius: 8px;
+                box-shadow: 0 3px 6px -4px rgba(153, 176, 201, 0.18), 0 6px 16px 0 rgba(153, 176, 201, 0.12), 0 9px 28px 8px rgba(153, 176, 201, 0.24);
+              }
             }
             
             #__next {

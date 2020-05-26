@@ -1,7 +1,9 @@
 import 'antd/dist/antd.css';
 import 'react-image-lightbox/style.css';
+import i18n from '../i18n';
 
 import { ConfigProvider } from 'antd';
+import { I18nextProvider } from 'react-i18next';
 import enGB from 'antd/lib/locale/en_GB';
 import { ThemeProvider } from 'emotion-theming';
 import App from 'next/app';
@@ -16,7 +18,9 @@ class MyApp extends App {
     return (
       <ConfigProvider locale={enGB}>
         <ThemeProvider theme={theme}>
-          <Component {...pageProps} />
+          <I18nextProvider i18n={i18n}>
+            <Component {...pageProps} />
+          </I18nextProvider>
         </ThemeProvider>
       </ConfigProvider>
     )

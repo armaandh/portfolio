@@ -1,6 +1,8 @@
 import React from 'react';
 import { withSize } from 'react-sizeme'
 import Layout from '../components/commons/Layout';
+import { useTranslation } from 'react-i18next';
+import { motion } from "framer-motion";
 
 import SystemThinking from '../public/icons/system-thinking.svg';
 import FirstPrinciples from '../public/icons/first-principles.svg';
@@ -26,12 +28,13 @@ import { AnimatedLayout } from '../components/commons/Animated';
 import Grid from '../components/commons/Grid'
 
 const Practice = ({ size }) => {
+  const { t, i18n } = useTranslation()
   const isResponsive = size.width < 1024
   return (
     <Layout 
-      title="Experiments - JC Pratt-Delzenne"
-      h1="Experiments"
-      text="I have a love of learning, growing my skillset and practicing regularly. Here are some of my experiments."
+      title={t('practice.meta-title')}
+      h1={t('practice.title')}
+      text={t('practice.description')}
     >
       <AnimatedLayout className="experiments">
         <Box>
@@ -41,7 +44,13 @@ const Practice = ({ size }) => {
         <Box>
           <CaseStudiesContainer>
             <Link href="/case-study-saia" scroll={false}>
-              <a className="case">
+              <motion.a
+                className="case"
+                whileHover={{
+                  scale: 1.04,
+                  transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                }}
+              >
                 <div className="img saia"></div>
                 <div className="info">
                   <p>Saia</p>
@@ -50,10 +59,16 @@ const Practice = ({ size }) => {
                     {isResponsive && <ArrowRight width="7" height="12" viewBox="0 0 11 19" />}
                   </div>
                 </div>
-              </a>
+              </motion.a>
             </Link>
             <Link href="/case-study-persona" scroll={false}>
-              <a className="case">
+              <motion.a
+                className="case"
+                whileHover={{
+                  scale: 1.04,
+                  transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                }}
+              >
                 <div className="img persona"></div>
                 <div className="info">
                   <p>Persona</p>
@@ -62,7 +77,7 @@ const Practice = ({ size }) => {
                     {isResponsive && <ArrowRight width="7" height="12" viewBox="0 0 11 19" />}
                   </div>
                 </div>
-              </a>
+              </motion.a>
             </Link>
           </CaseStudiesContainer>
         </Box>
