@@ -22,7 +22,10 @@ import SaiaLogo from '../../public/logos/saia-logo.svg';
 import PersonaLogo from '../../public/logos/persona-logo.svg';
 import Linkedin from '../../public/icons/linkedin.svg';
 import Twitter from '../../public/icons/twitter.svg';
+import LinkedinBlue from '../../public/icons/linkedin-blue.svg';
+import TwitterBlue from '../../public/icons/twitter-blue.svg';
 import ArrowUp from '../../public/icons/arrow-up.svg';
+import ArrowBack from '../../public/icons/back-button.svg';
 import Lang from '../../public/icons/lang.svg';
 import { cssShadowDefault } from "../../utils/theme";
 import { scrollTop, ScrollToTopController } from "../../utils/utils";
@@ -71,11 +74,47 @@ const ContentLayout = styled(AntLayout)`
     ${cssShadowDefault};
   }
 
+  .scroll-social {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(50%);
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+    background: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    ${cssShadowDefault};
+
+    .social-buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 25px;
+
+      .linkedin {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
 
   /* RESPONSIVE */
   @media only screen and (max-width: 1024px) {
     padding-left: 20px;
     padding-right: 20px;
+
+    .scroll-social {
+      top: initial;
+      left: initial;
+      right: 0px;
+      bottom: -69px;
+    }
   }
 
   @media only screen and (max-width: 540px) {
@@ -345,9 +384,11 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
   const [ref, percentage] = useScrollPercentage()
   const router = useRouter()
   const { t, i18n } = useTranslation()
-  const isFullProcess = router.query.show === "fullprocess"
-  const showScrollTop = percentage > 0.18 && isFullProcess
+  const isPages = router.pathname !== "/"
   const isResponsive = size.width < 1024
+  const isMobile = size.width < 550
+  const windowScroll = window.scrollY;
+  const showScrollTop = isMobile ? windowScroll > 250 && isPages : windowScroll > 490 && isPages
   const getCurrentLng = () => i18n.language || window.localStorage.i18nextLng || '';
   const setLang = (lang) => {
     window.localStorage.setItem("myLang", lang)
@@ -387,7 +428,7 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
           <meta property="og:title" content={title} />
           <meta property="twitter:title" content={title} />
           <title>{title}</title>
-          {process.env.PROD && <script dangerouslySetInnerHTML={{__html: `window.$crisp=[];window.CRISP_WEBSITE_ID="5a23ecdd-d01f-4aea-87b2-480021d26264";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();` }} />}
+          {!process.env.PROD && <script dangerouslySetInnerHTML={{__html: `window.$crisp=[];window.CRISP_WEBSITE_ID="5a23ecdd-d01f-4aea-87b2-480021d26264";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();` }} />}
         </Head>
         <ScrollToTopController />
         <div className="layout-container">
@@ -517,13 +558,13 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
 
           {children}
 
-          <AnimatePresence>
+          {/* <AnimatePresence>
             {showScrollTop &&
                 <motion.div
                   className="scroll-top"
                   onClick={scrollTop}
                   initial={{ scale: 0 }}
-                  animate={{ scale: 0.7 }}
+                  animate={{ scale: 0.8 }}
                   exit={{ scale: 0 }}
                   transition={{
                     type: "spring",
@@ -532,6 +573,39 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
                   }}
                 >
                   <ArrowUp width="32" height="32" viewBox="-4 -4 32 32" />
+                </motion.div>
+            }
+          </AnimatePresence> */}
+          <AnimatePresence>
+            {showScrollTop &&
+                <motion.div
+                  className="scroll-social"
+                  initial={{ scale: 0, y: '0%' }}
+                  animate={{ scale: isMobile ? 0.7 : 0.8, y: '-50%' }}
+                  exit={{ scale: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 23
+                  }}
+                >
+                  <Link href="/" scroll={false}>
+                    <a className="back-button">
+                      <ArrowBack width="30" height="30" viewBox="0 0 20 20" />
+                    </a>
+                  </Link>
+                  <div className="social-buttons">
+                    <Link href="https://www.linkedin.com/in/jean-claude-pratt-delzenne-5687646b/" scroll={false} prefetch={false}>
+                      <a className="linkedin" target="_blank">
+                        <LinkedinBlue width="50" height="50" viewBox="0 0 32 31" />
+                      </a>
+                    </Link>
+                    <Link href="https://twitter.com/delzennejc" scroll={false} prefetch={false}>
+                      <a className="twitter" target="_blank">
+                        <TwitterBlue width="50" height="50" viewBox="0 0 32 31" />
+                      </a>
+                    </Link>
+                  </div>
                 </motion.div>
             }
           </AnimatePresence>
