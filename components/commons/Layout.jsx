@@ -428,7 +428,7 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
           <meta property="og:title" content={title} />
           <meta property="twitter:title" content={title} />
           <title>{title}</title>
-          {!process.env.PROD && <script dangerouslySetInnerHTML={{__html: `window.$crisp=[];window.CRISP_WEBSITE_ID="5a23ecdd-d01f-4aea-87b2-480021d26264";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();` }} />}
+          {process.env.PROD && <script dangerouslySetInnerHTML={{__html: `window.$crisp=[];window.CRISP_WEBSITE_ID="5a23ecdd-d01f-4aea-87b2-480021d26264";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();` }} />}
         </Head>
         <ScrollToTopController />
         <div className="layout-container">
