@@ -85,6 +85,16 @@ export default class MyDocument extends Document {
               overflow: hidden;
             }
 
+            .ant-popover-content {
+              .ant-popover-inner {
+                border-radius: 20px;
+
+                .ant-popover-inner-content {
+                  padding: 0;
+                }
+              }
+            }
+
             .language-dropdown {
               ul {
                 border-radius: 8px;
@@ -114,6 +124,15 @@ export default class MyDocument extends Document {
             }
 
             @media only screen and (max-width: 550px) {
+              /* .ant-popover-placement-bottom {
+                left: 50% !important;
+                transform: translateX(-50%) !important;
+              } */
+              .ant-popover-content {
+                .ant-popover-arrow {
+                  display: none;
+                }
+              }
               p, h2, h3 {
                 font-size: 15px;
                 line-height: 17px;

@@ -25,7 +25,47 @@
             "title": "Modèles favoris",
             "lean": "Lean Startup",
             "design": "Design Thinking",
-            "bayes": "Pensée Bayésienne"
+            "bayes": "Traits Big Five"
+        },
+        "dropdown": {
+            "description": "Description",
+            "methods": "Methods",
+            "ux": {
+                "text": "<bold>UX Design</bold> est le process qui consiste à modifier le comportement des users en identifiant et en amplifiant l'utilité et la facilité d'utilisation d'un produit ou d'un service. J'utilise plusieurs framework UX en fonction des exigences du produit.",
+                "list": "['Design Sprint', 'Lean UX', 'Prototype', 'User Journey Map', 'User Persona', \"Tests d'utilissabilité\", 'User interviews']"
+            },
+            "eng": {
+                "text": "<bold>Software Engineering</bold> est l'approche systématique de la conception, construction et du tests des logiciels. J'utilise principalement JavaScript avec React et Nodejs pour la plupart des logiciels ou applications.",
+                "list": "['Frontend', 'Backend', 'Architecture Logicielle', 'Data Analyse', 'Gestion de database', 'Machine Learning']"
+            },
+            "psy": {
+                "text": "<bold>Psychologie</bold> est l'étude scientifique de l'esprit et du comportement. Ce que j'aime le plus, c'est le domaine de la science de la personnalité, qui utilise les \"Big Five\" ou la théorie de Jungian pour mieux comprendre les gens et leurs motivations.",
+                "list": "['Personalité', 'Interviews', 'Modèles Mentaux', 'Biais Cognitif', 'Théorie de la décison', 'Nudges']"
+            },
+            "ui": {
+                "text": "<bold>UI Design</bold> est le process de création d'interfaces logiciels en mettant l'accent sur l'aspect visuel. Les users doivent trouver l'interface facile à utiliser et agréable. Lorsque je crée une UI, je mets l'accent sur la structure, la typographie et les couleurs.",
+                "list": "['Disign Visuelle', 'Typographie', 'Esquisse', 'Wireframes', 'Micro-intéractions', 'Design Systems']"
+            },
+            "market": {
+                "text": "<bold>Marketing</bold> est le process d'identification, d'anticipation et de satisfaction des besoins et des désirs des clients. Je me concentre surtout sur le SEO, mais j'ai aussi travaillé dans le secteur de la publicité.",
+                "list": "['SEO', 'Copywriting', 'Publicité', 'A/B Testing', 'Public speaking', 'Lancement produit']"
+            },
+            "entre": {
+                "text": "<bold>Entrepreneurship</bold> est l'acte de créer de la valeur pour les clients. Il s'agit de concevoir, de lancer et de gérer une entreprise. J'ai utilisé le Lean Startup pour créer les business que j'ai présentées dans la partie consacrée aux études de cas.",
+                "list": "['Lean Startup', 'Minimum Viable Product', 'Business Model', 'Modèle Financier', 'Pitch', 'Gestion de KPI']"
+            },
+            "lean": {
+                "text": "<bold>Lean startup</bold> est une méthodologie pour développer des entreprises et des produits dans un cycle de produit court afin de découvrir la viabilité d'un Business Model. Il s'agit d'un process axé sur l'expérimentation.",
+                "list": "['Build, Measure, Learn', 'Minimum Viable Product', 'Validated Learning', 'Continuous Delivery', 'Lean Canvas', 'Split testing']"
+            },
+            "design": {
+                "text": "<bold>Design thinking</bold> est un process itératif de conception de produits par la compréhension des users, la redéfinition des problèmes et la vérification des hypothèses à l'aide de prototypes.",
+                "list": "['Empatir', 'Définir', 'Idéer', 'Prototyper', 'Tester']"
+            },
+            "big": {
+                "text": "<bold>The Big five Traits</bold> is the most accepted scientific model of personality. Through a survey, it helps the taker understand themselves through 5 factors.",
+                "list": "['Extraversion', 'Ouverture', 'Conscienciosité', 'Agréabilité', 'Névrosisme']"
+            }
         },
         "practice": {
             "title": "Exercices",

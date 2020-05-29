@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { motion } from "framer-motion";
+import { Dropdown, Popover } from 'antd';
 import { cssShadowDefault } from '../utils/theme';
 
 export const Box = styled.div`
@@ -247,6 +248,7 @@ export const ModelsContainer = styled.div`
     align-items: center;
     background-color: white;
     border-radius: 32px;
+    cursor: pointer;
     ${cssShadowDefault};
 
     p {
@@ -1171,6 +1173,7 @@ export const SkillsContainer = styled.div`
     justify-content: space-between;
     width: 33%;
     height: 170px;
+    cursor: pointer;
 
     &:nth-of-type(-n+3) {
       margin-bottom: 60px;
@@ -1243,6 +1246,147 @@ export const SkillsContainer = styled.div`
   }
 `;
 
+export const SeeMoreContainer = styled.div`
+  width: 530px;
+  min-height: 282px;
+  padding: 30px 15px 30px 20px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  ${cssShadowDefault};
+
+  .description-container, .methods-container {
+    flex: 1;
+
+    .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+
+      .icon {
+        color: #66768C;
+        margin-right: 8px;
+        font-size: 22px;
+        margin-top: -4px;
+      }
+      span {
+        color: #66768C;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+    .content {
+      margin-left: 28px;
+      margin-right: 7px;
+      font-size: 14px;
+
+      bold {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .methods-container {
+    margin-left: 15px;
+    .content {
+      margin-left: 10px;
+      margin-right: 0px;
+      font-size: 15px;
+      list-style-type: circle;
+      list-style-position: inside;
+
+      li:not(:last-of-type) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    width: 375px;
+    min-height: 282px;
+    padding: 20px 12px 20px 8px;
+
+    .description-container, .methods-container {
+      .title {
+        margin-bottom: 6px;
+
+        .icon {
+          margin-right: 5px;
+          font-size: 15px;
+          margin-top: -2px;
+        }
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .content {
+      margin-left: 15px;
+      margin-right: 5px;
+      font-size: 12px;
+    }
+  }
+
+  .description-container {
+    .title {
+      padding-left: 7px;
+    }
+  }
+
+  .methods-container {
+    margin-left: 8px;
+    .content {
+      margin-left: 5px;
+      margin-right: 0px;
+      font-size: 13px;
+
+      li:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 320px;
+    flex-direction: column;
+
+    .description-container, .methods-container {
+      margin-left: 8px;
+    }
+
+    .description-container {
+      margin-bottom: 20px;
+
+      .title {
+        padding-left: 0px;
+      }
+      .content {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 13px;
+      }
+    }
+
+    .methods-container {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+
+        li {
+          font-size: 12px;
+          flex: 1 0 46%;
+          margin: 5px;
+        }
+      }
+    }
+  }
+`
+
+export const SkillsDropdown = styled(Popover)``
+
 export const Divider = styled(motion.div, { excludeProps: ['blue', 'bigMargin'] })`
   width: 300px;
   height: 4px;
@@ -1254,4 +1398,5 @@ export const Divider = styled(motion.div, { excludeProps: ['blue', 'bigMargin'] 
     margin: 40px auto 40px auto;
   }
 `;
+
 

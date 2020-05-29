@@ -25,7 +25,47 @@
             "title": "Favorite Models",
             "lean": "Lean Startup",
             "design": "Design Thinking",
-            "bayes": "Bayesian Thinking"
+            "bayes": "Big Five Traits"
+        },
+        "dropdown": {
+            "description": "Description",
+            "methods": "Methods",
+            "ux": {
+                "text": "<bold>UX Design</bold> is the process of changing the behaviour of users by identifying and amplifying the usefulness and usability of a product or service. I use multiple UX frameworks depending on the demands of the product.",
+                "list": "['Design Sprint', 'Lean UX', 'Prototype', 'User Journey Map', 'User Persona', 'Usability tests', 'User interviews']"
+            },
+            "eng": {
+                "text": "<bold>Software Engineering</bold> is the systematic approach of designing, building, and testing software application. I mostly use  JavaScript as my go to language with React and Nodejs for most software or app.",
+                "list": "['Frontend', 'Backend', 'Software Architecture', 'Data Analysis', 'Database Management', 'Machine Learning']"
+            },
+            "psy": {
+                "text": "<bold>Psychology</bold> is the scientific study of the mind and behaviour. What I love most is the personality science field, using the Big Five or Jungian theory to better understand people and their motivations.",
+                "list": "['Personality Science', 'Interviews', 'Mental Models', 'Cognitive Biases', 'Decision Theory', 'Nudges']"
+            },
+            "ui": {
+                "text": "<bold>UI Design</bold> is the process of making interfaces in software with a focus on looks. Users must find it easy to use and pleasurable. When I make user interfaces I focus on structure, typography and colours.",
+                "list": "['Visual Design', 'Typography', 'Sketches', 'Wireframes', 'Micro-interactions', 'Design Systems']"
+            },
+            "market": {
+                "text": "<bold>Marketing</bold> is the process of identifying, anticipating and satisfying customers’ needs and wants. I mostly focus organic reach but I also worked in the advertising industry.",
+                "list": "['SEO', 'Copywriting', 'Advertising', 'A/B Testing', 'Public speaking', 'Product launches']"
+            },
+            "entre": {
+                "text": "<bold>Entrepreneurship</bold> is the act of creating value for customers. It’s about designing, launching and running a new business. I used the Lean startup methodology to create the businesses I presented in the case study part.",
+                "list": "['Lean Startup', 'Minimum Viable Product', 'Business Model', 'Financial Model', 'Pitch', 'KPI Management']"
+            },
+            "lean": {
+                "text": "<bold>Lean startup</bold> is a methodology for developing business and products in a short product cycle to discover the viability of a business model. It’s an experiment driven process.",
+                "list": "['Build, Measure, Learn', 'Minimum Viable Product', 'Validated Learning', 'Continuous Delivery', 'Lean Canvas', 'Split testing']"
+            },
+            "design": {
+                "text": "<bold>Design thinking</bold> is an iterative process of designing products by understanding users, redefining problems and testing assumptions with prototypes.",
+                "list": "['Empathise', 'Define', 'Ideate', 'Prototype', 'Test']"
+            },
+            "big": {
+                "text": "<bold>The Big five Traits</bold> is the most accepted scientific model of personality. Through a survey, it helps the taker understand themselves through 5 factors.",
+                "list": "['Extraversion', 'Openness', 'Conscientiousness', 'Agreeableness', 'Neurotiscism']"
+            }
         },
         "practice": {
             "title": "practices",
