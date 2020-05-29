@@ -102,55 +102,91 @@ const Index = ({ size }) => {
           <SkillsContainer>
             <SkillsDropdown placement="bottom" content={UXdesignOver} trigger={'click'}>
               <div className="skill ux">
-                <div className="icon">
+                <motion.div
+                  className="icon"
+                  whileHover={{
+                    scale: 1.09,
+                    transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                  }}
+                >
                   {!isResponsive && <UXdesign width="60" height="60" viewBox="0 0 60 60" />}
                   {isResponsive && <UXdesign width="33" height="33" viewBox="0 0 60 60" />}
-                </div>
+                </motion.div>
                 <p>{t('home.skills.ux')}</p>
               </div>
             </SkillsDropdown>
             <SkillsDropdown placement="bottom" content={PsychologyOver} trigger={'click'}>
               <div className="skill psy">
-                <div className="icon">
+                <motion.div
+                  className="icon"
+                  whileHover={{
+                    scale: 1.09,
+                    transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                  }}
+                >
                   {!isResponsive && <Psychology width="60" height="57" viewBox="0 0 60 57" />}
                   {isResponsive && <Psychology width="32" height="31" viewBox="0 0 60 57" />}
-                </div>
+                </motion.div>
                 <p>{t('home.skills.psy')}</p>
               </div>
             </SkillsDropdown>
             <SkillsDropdown placement="bottom" content={EngineeringOver} trigger={'click'}>
               <div className="skill eng">
-                <div className="icon">
+                <motion.div
+                  className="icon"
+                  whileHover={{
+                    scale: 1.09,
+                    transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                  }}
+                >
                   {!isResponsive && <Engineering width="60" height="60" viewBox="0 0 60 60" />}
                   {isResponsive && <Engineering width="33" height="33" viewBox="0 0 60 60" />}
-                </div>
+                </motion.div>
                 <p>{t('home.skills.eng')}</p>
               </div>
             </SkillsDropdown>
             <SkillsDropdown placement="bottom" content={UIdesignOver} trigger={'click'}>
               <div className="skill ui">
-                <div className="icon">
+                <motion.div
+                  className="icon"
+                  whileHover={{
+                    scale: 1.09,
+                    transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                  }}
+                >
                   {!isResponsive && <UIdesign width="60" height="60" viewBox="0 0 60 60" />}
                   {isResponsive && <UIdesign width="33" height="33" viewBox="0 0 60 60" />}
-                </div>
+                </motion.div>
                 <p>{t('home.skills.ui')}</p>
               </div>
             </SkillsDropdown>
             <SkillsDropdown placement="bottom" content={MarketingOver} trigger={'click'}>
               <div className="skill market">
-                <div className="icon">
+                <motion.div
+                  className="icon"
+                  whileHover={{
+                    scale: 1.09,
+                    transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                  }}
+                >
                   {!isResponsive && <Marketing width="60" height="60" viewBox="0 0 60 60" />}
                   {isResponsive && <Marketing width="33" height="33" viewBox="0 0 60 60" />}
-                </div>
+                </motion.div>
                 <p>{t('home.skills.market')}</p>
               </div>
             </SkillsDropdown>
             <SkillsDropdown placement="bottom" content={EntrepreneurshipOver} trigger={'click'}>
               <div className="skill entre">
-                <div className="icon">
+                <motion.div
+                  className="icon"
+                  whileHover={{
+                    scale: 1.09,
+                    transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                  }}
+                >
                   {!isResponsive && <Entrepreneurship width="39" height="60" viewBox="0 0 39 60" />}
                   {isResponsive && <Entrepreneurship width="21" height="33" viewBox="0 0 39 60" />}
-                </div>
+                </motion.div>
                 <p>{t('home.skills.entre')}</p>
               </div>
             </SkillsDropdown>
@@ -160,25 +196,44 @@ const Index = ({ size }) => {
           <h2>{t('home.favoritemodels.title')}</h2>
           <ModelsContainer>
             <SkillsDropdown placement="bottom" content={LeanStartupOver} trigger={'click'}>
-              <div className="model">
+              <motion.div
+                className="model"
+                whileHover={{
+                  scale: 1.02,
+                  transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                }}
+              >
                 {!isResponsive && <DesignThinking  width="85" height="85" viewBox="0 0 104 104" />}
                 {isResponsive && <DesignThinking  width="38" height="39" viewBox="0 0 104 104" />}
                 <p>{t('home.favoritemodels.lean')}</p>
-              </div>
+              </motion.div>
             </SkillsDropdown>
             <SkillsDropdown placement="bottom" content={DesignThinkingOver} trigger={'click'}>
-              <div className="model">
+              <motion.div 
+                className="model"
+                whileHover={{
+                  scale: 1.02,
+                  transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                }}
+              >
                 {!isResponsive && <SystemThinking  width="85" height="85" viewBox="0 0 103 102" />}
                 {isResponsive && <SystemThinking  width="38" height="39" viewBox="0 0 103 102" />}
                 <p>{t('home.favoritemodels.design')}</p>
-              </div>
+              </motion.div>
             </SkillsDropdown>
             <SkillsDropdown placement="bottom" content={BigFiveTraitsOver} trigger={'click'}>
-              <div className="model">
+              <motion.div 
+                className="model"
+                whileHover={{
+                  scale: 1.02,
+                  transition: { duration: 1, type: "spring", stiffness: 400, damping: 20, },
+                }}
+              >
                 {!isResponsive && <FirstPrinciples  width="85" height="85" viewBox="0 0 104 104" />}
                 {isResponsive && <FirstPrinciples  width="38" height="39" viewBox="0 0 104 104" />}
                 <p>{t('home.favoritemodels.bayes')}</p>
-              </div>
+              </motion.div>
+
             </SkillsDropdown>
           </ModelsContainer>
         </Box>
