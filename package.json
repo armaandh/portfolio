@@ -28,6 +28,7 @@
     "react": "^16.12.0",
     "react-country-flag": "^2.1.0",
     "react-dom": "^16.12.0",
+    "react-fullstory": "^1.4.0",
     "react-ga": "^2.7.0",
     "react-hooks": "^1.0.1",
     "react-hotjar": "^2.2.0",

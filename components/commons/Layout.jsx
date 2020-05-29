@@ -8,6 +8,7 @@ import { Layout as AntLayout, Menu, Dropdown, Spin, Icon, } from 'antd';
 import { useScrollPercentage } from 'react-scroll-percentage'
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from 'react-i18next';
+import FullStory from 'react-fullstory';
 
 import {
   HistoryOutlined,
@@ -31,6 +32,8 @@ import { cssShadowDefault } from "../../utils/theme";
 import { scrollTop, ScrollToTopController } from "../../utils/utils";
 
 const { Header, Footer } = AntLayout;
+
+const ORG_ID = 'VHJ0H';
 
 const PageLayout = styled.div`
   display: flex;
@@ -431,6 +434,7 @@ function Layout({ children, title, home, h1, text, caseStudy, backButton, size }
           {process.env.PROD && <script dangerouslySetInnerHTML={{__html: `window.$crisp=[];window.CRISP_WEBSITE_ID="5a23ecdd-d01f-4aea-87b2-480021d26264";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();` }} />}
         </Head>
         <ScrollToTopController />
+        {process.env.PROD && <FullStory org={ORG_ID} />}
         <div className="layout-container">
           <motion.div
             className="home"

@@ -1,10 +1,9 @@
 import ReactGA from 'react-ga'
-import { hotjar } from 'react-hotjar';
+// import { hotjar } from 'react-hotjar';
 
 export const initAnalytics = () => {
   console.log('GA init')
   ReactGA.initialize('UA-155177692-2')
-  hotjar.initialize(1813828, 6);
 }
 export const logPageView = () => {
   console.log(`Logging pageview for ${window.location.pathname}`)
